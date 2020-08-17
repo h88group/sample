@@ -8,40 +8,32 @@
     <div class="home-features__body">
       <VueSlickCarousel class="home-feature-carousel" v-bind="settings">
         <div class="item">
-          <a href="#">
             <img src="../assets/images/hot17.jpg" width="318" height="358" alt="伐木累" />
             <div class="feature__frame">
               <h3 class="feature__title">伐木累</h3>
               <p>每月精彩8号及28号，约定您！</p>
             </div>
-          </a>
         </div>
         <div class="item">
-          <a href="#">
             <img src="../assets/images/hot37.jpg" width="318" height="358" alt="伐木累" />
             <div class="feature__frame">
               <h3 class="feature__title">气势逼「真」人</h3>
               <p>锲而不舍，5,288可镂！</p>
             </div>
-          </a>
         </div>
         <div class="item">
-          <a href="#">
             <img src="../assets/images/hot38.jpg" width="318" height="358" alt="伐木累" />
             <div class="feature__frame">
               <h3 class="feature__title">真人火爆加码</h3>
               <p>周周存，周周送！回赠100%！</p>
             </div>
-          </a>
         </div>
         <div class="item">
-          <a href="#">
             <img src="../assets/images/hot29.jpg" width="318" height="358" alt="伐木累" />
             <div class="feature__frame">
               <h3 class="feature__title">未赌先赢</h3>
               <p>EA首存即送30%</p>
             </div>
-          </a>
         </div>
       </VueSlickCarousel>
       <ul class="home-feature-advantage">
