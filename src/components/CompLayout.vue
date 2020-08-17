@@ -1,14 +1,14 @@
 <template>
-
+<div></div>
 </template>
 
 <script>
 export default {
-  name: "comp-layout",
-  data() {
-    return {};
+  name: 'comp-layout',
+  data () {
+    return {}
   }
-};
+}
 </script>
 
 <style>

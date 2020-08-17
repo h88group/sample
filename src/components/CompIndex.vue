@@ -6,19 +6,19 @@
 </template>
 
 <script>
-import CompIndexSlider from "./CompIndexSlider";
-import CompIndexFeatures from "./CompIndexFeatures";
+import CompIndexSlider from './CompIndexSlider'
+import CompIndexFeatures from './CompIndexFeatures'
 
 export default {
-  name: "comp-index",
-  data() {
-    return {};
+  name: 'comp-index',
+  data () {
+    return {}
   },
   components: {
     CompIndexFeatures,
-    CompIndexSlider,
-  },
-};
+    CompIndexSlider
+  }
+}
 </script>
 
 <style>

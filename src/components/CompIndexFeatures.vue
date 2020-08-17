@@ -98,25 +98,29 @@
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
+import VueSlickCarousel from 'vue-slick-carousel'
 
 export default {
-  name: "comp-index-features",
+  name: 'comp-index-features',
   components: { VueSlickCarousel },
-  data() {
+  data () {
     return {
       settings: {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 2e3,
         infinite: true,
-        lazyLoad: "progressive",
+        lazyLoad: 'progressive',
         dots: true,
-      },
-    };
-  },
-};
+        draggable: true
+      }
+    }
+  }
+}
 </script>
 
 <style>
+  .home-feature-carousel .item img{
+    pointer-events: none;
+  }
 </style>

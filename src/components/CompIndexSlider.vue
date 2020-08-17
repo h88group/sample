@@ -2,39 +2,25 @@
   <section class="home-slides-wrapper2">
     <VueSlickCarousel class="home-slides2" v-bind="settings">
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/wm-launch.jpg" alt />
-        </a>
       </div>
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/promo282.jpg" alt />
-        </a>
       </div>
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/wm-launch.jpg" alt />
-        </a>
       </div>
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/promo282.jpg" alt />
-        </a>
       </div>
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/wm-launch.jpg" alt />
-        </a>
       </div>
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/promo282.jpg" alt />
-        </a>
       </div>
       <div class="slide">
-        <a href="#">
           <img src="../assets/images/wm-launch.jpg" alt />
-        </a>
       </div>
     </VueSlickCarousel>
     <div class="home-slides__news">
@@ -72,26 +58,30 @@
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
+import VueSlickCarousel from 'vue-slick-carousel'
 
 export default {
-  name: "comp-index-slider",  
+  name: 'comp-index-slider',
   components: { VueSlickCarousel },
-  data() {
+  data () {
     return {
       settings: {
-        "arrows": true,
-        "dots": true,
-        "dotsClass": 'home-slides-pager2 container',
-        "autoplay": true,
-        "autoplaySpeed": 3e3,
-        "infinite": true,
-        "lazyLoad": 'progressive'
-      },
-    };
-  },
-};
+        arrows: true,
+        dots: true,
+        dotsClass: 'home-slides-pager2 container',
+        autoplay: true,
+        autoplaySpeed: 3e3,
+        infinite: true,
+        lazyLoad: 'progressive',
+        draggable: true
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
+.home-slides2 .slide img{
+  pointer-events: none;
+}
 </style>

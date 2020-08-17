@@ -10,7 +10,7 @@
         </section>
         <section class="main-header__right">
           <div class="top">
-            <!--<span class="item hide--condensed"> <a class="open-modal-forgot-password" role="button">忘记密码</a> </span> <span id="header-login-form" class="main-header-wide-menu main-header__login-form">
+           <span class="item hide--condensed"> <a class="open-modal-forgot-password" role="button">忘记密码</a> </span> <span id="header-login-form" class="main-header-wide-menu main-header__login-form">
           <form>
             <input type="text" name="username" placeholder="账号">
             <span class="form-toggle-password-wrapper">
@@ -18,7 +18,7 @@
             <a class="btn-toggle-password" role="button"><i class="icon icon--toggle-password"></i></a> </span>
             <button type="submit" class="btn">登入</button>
           </form>
-            <a class="btn gray" href="register.html">注册</a> </span> <span class="main-header__login-form main-header-condensed-menu"> <a class="btn open-modal-login">登入</a> <a class="btn gray" href="register.html">注册</a> </span>-->
+            <a class="btn gray" href="register.html">注册</a> </span> <span class="main-header__login-form main-header-condensed-menu"> <a class="btn open-modal-login">登入</a> <a class="btn gray" href="register.html">注册</a> </span>
             <span class="item hide--condensed">
               <a href="cashier.html">
                 <i class="icon icon--svg icon--wallet">
@@ -892,11 +892,11 @@
 
 <script>
 export default {
-  name: "comp-header",
-  data() {
-    return {};
-  },
-};
+  name: 'comp-header',
+  data () {
+    return {}
+  }
+}
 </script>
 
 <style>

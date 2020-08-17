@@ -9,20 +9,20 @@
 </template>
 
 <script>
-import CompHeader from "./components/CompHeader";
-import CompFooter from "./components/CompFooter";
-import CompSitemap from "./components/CompSitemap";
-import CompIndex from "./components/CompIndex";
+import CompHeader from './components/CompHeader'
+import CompFooter from './components/CompFooter'
+import CompSitemap from './components/CompSitemap'
+import CompIndex from './components/CompIndex'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     CompHeader,
     CompFooter,
     CompSitemap,
-    CompIndex,
-  },
-};
+    CompIndex
+  }
+}
 </script>
 
 <style>
