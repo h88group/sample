@@ -33,21 +33,21 @@
       <section class="directory">
         <h4>&nbsp;</h4>
         <ul>
-          <li><a href="about.html">关于「红88」</a></li>
+          <li><router-link :to="{ name: 'About' }">关于「红88」</router-link></li>
           <li><a href="app" target="_blank">下载专区</a></li>
-          <li><a href="terms.html">服务条款</a></li>
-          <li><a href="privacy.html">隐私权声明</a></li>
-          <li><a href="contact.html">客服中心</a></li>
-          <li><a href="guide.html">新手指南</a></li>
-          <li><a href="guide.html">存款须知</a></li>
-          <li><a href="guide.html">如何转账</a></li>
-          <li><a href="guide.html">提款须知</a></li>
-          <li><a href="guide.html">如何更改密码</a></li>
-          <li><a href="guide.html">绑定银行信息</a></li>
-          <li><a href="guide.html">忘记登入密码</a></li>
-          <li><a href="guide.html">账户问题</a></li>
-          <li><a href="guide.html">注册问题</a></li>
-          <li><a href="guide.html">常见问题</a></li>
+          <li><router-link :to="{ name: 'Terms' }">服务条款</router-link></li>
+          <li><router-link :to="{ name: 'Privacy' }">隐私权声明</router-link></li>
+          <li><router-link :to="{ name: 'Contact' }">客服中心</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">新手指南</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">存款须知</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">如何转账</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">提款须知</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">如何更改密码</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">绑定银行信息</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">忘记登入密码</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">账户问题</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">注册问题</router-link></li>
+          <li><router-link :to="{ name: 'Guide' }">常见问题</router-link></li>
         </ul>
       </section>
     </div>

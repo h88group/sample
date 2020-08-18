@@ -34,7 +34,7 @@
             </span>
             <span class="main-header__login-form main-header-condensed-menu">
               <a class="btn open-modal-login">登入</a>
-              <a class="btn gray" href="register.html">注册</a>
+              <router-link class="btn gray" :to="{ name: 'Register' }">注册</router-link>
             </span>
             <span class="item hide--condensed">
               <a href="cashier.html">
