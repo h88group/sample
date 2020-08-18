@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import CompHeader from './components/CompHeader'
-import CompFooter from './components/CompFooter'
-import CompSitemap from './components/CompSitemap'
+import CompHeader from './components/Layout/CompHeader'
+import CompFooter from './components/Layout/CompFooter'
+import CompSitemap from './components/Layout/CompSitemap'
 
 export default {
   name: 'App',

@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import CompIndexSlider from './CompIndexSlider'
-import CompIndexFeatures from './CompIndexFeatures'
+import CompIndexSlider from './IndexComp/CompIndexSlider'
+import CompIndexFeatures from './IndexComp/CompIndexFeatures'
 
 export default {
   name: 'Index',

@@ -2,25 +2,25 @@
   <section class="home-slides-wrapper2">
     <VueSlickCarousel class="home-slides2" v-bind="settings">
       <div class="slide">
-          <img src="../assets/images/wm-launch.jpg" alt />
+          <img src="../../assets/images/wm-launch.jpg" alt />
       </div>
       <div class="slide">
-          <img src="../assets/images/promo282.jpg" alt />
+          <img src="../../assets/images/promo282.jpg" alt />
       </div>
       <div class="slide">
-          <img src="../assets/images/wm-launch.jpg" alt />
+          <img src="../../assets/images/wm-launch.jpg" alt />
       </div>
       <div class="slide">
-          <img src="../assets/images/promo282.jpg" alt />
+          <img src="../../assets/images/promo282.jpg" alt />
       </div>
       <div class="slide">
-          <img src="../assets/images/wm-launch.jpg" alt />
+          <img src="../../assets/images/wm-launch.jpg" alt />
       </div>
       <div class="slide">
-          <img src="../assets/images/promo282.jpg" alt />
+          <img src="../../assets/images/promo282.jpg" alt />
       </div>
       <div class="slide">
-          <img src="../assets/images/wm-launch.jpg" alt />
+          <img src="../../assets/images/wm-launch.jpg" alt />
       </div>
     </VueSlickCarousel>
     <div class="home-slides__news">

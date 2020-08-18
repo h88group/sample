@@ -3,7 +3,7 @@
   <div class="container sitemap-content">
     <div class="column">
       <section class="client-downloads">
-        <h4>客户端下载 <img src="../assets/images/client-download-icon.gif" width="14" height="15" alt="客户端下载" style="vertical-align: baseline;"></h4>
+        <h4>客户端下载 <img src="../../assets/images/client-download-icon.gif" width="14" height="15" alt="客户端下载" style="vertical-align: baseline;"></h4>
         <ul class="clients">
           <li> <a href="#">
             <div class="client__logo"> <img src="https://media.wvwuwvuwvw.com/e8fe/images/ui/footer/clients/ag.png" srcset="https://media.wvwuwvuwvw.com/e8fe/images/ui/footer/clients/ag-2x.png 2x" width="105" height="30" alt="AG综合游戏"> </div>

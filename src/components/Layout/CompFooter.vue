@@ -3,7 +3,7 @@
   <div class="container footer-content">
     <section class="partners">
       <h4>合作伙伴</h4>
-      <img src="../assets/images/affiliate.svg" width="530" height="180" alt="合作伙伴">
+      <img src="../../assets/images/affiliate.svg" width="530" height="180" alt="合作伙伴">
       <div class="copyright">红88©2020版权所有</div>
     </section>
     <section class="contacts">
@@ -16,7 +16,7 @@
     </section>
     <section class="about-us">
       <h4>关注我们</h4>
-      <figure class="e8sport-qr-code"> <img src="../assets/images/qrcode.png" width="116" height="116" alt="微信"> </figure>
+      <figure class="e8sport-qr-code"> <img src="../../assets/images/qrcode.png" width="116" height="116" alt="微信"> </figure>
     </section>
   </div>
 </footer>

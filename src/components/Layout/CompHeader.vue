@@ -4,10 +4,10 @@
       <div class="main-header__inner container" style="width: 1320px;">
         <section class="main-header__left">
           <a href="index.html">
-            <img class="header-logo" src="../assets/images/logo.png" width="266" height="80" alt />
+            <img class="header-logo" src="../../assets/images/logo.png" width="266" height="80" alt />
             <img
               class="header-logo--condensed"
-              src="../assets/images/logo2.png"
+              src="../../assets/images/logo2.png"
               alt
               width="133"
               height="44"
@@ -227,7 +227,7 @@
             </span>
             <span class="item">
               <a href="profile.html" title="普通会员">
-                <img src="../assets/images/shield.svg" width="34" height="32" alt /> 您好,
+                <img src="../../assets/images/shield.svg" width="34" height="32" alt /> 您好,
                 <strong>mat88993</strong>
               </a>
             </span>
@@ -237,7 +237,7 @@
             <li>
               <a class="drop-down" href="#">
                 <img
-                  src="../assets/images/menu/new.svg"
+                  src="../../assets/images/menu/new.svg"
                   width="38"
                   height="18"
                   alt="新品"
@@ -249,7 +249,7 @@
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/wm.jpg"
+                      src="../../assets/images/menu/zhenren/wm.jpg"
                       width="188"
                       height="120"
                       alt="WM"
@@ -264,7 +264,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/eg.jpg"
+                      src="../../assets/images/menu/zhenren/eg.jpg"
                       width="188"
                       height="120"
                       alt="EG"
@@ -294,7 +294,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/ea.jpg"
+                      src="../../assets/images/menu/zhenren/ea.jpg"
                       width="188"
                       height="120"
                       alt="EA"
@@ -333,7 +333,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/n2live.jpg"
+                      src="../../assets/images/menu/zhenren/n2live.jpg"
                       width="188"
                       height="120"
                       alt="N2Live"
@@ -363,7 +363,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/ebet.jpg"
+                      src="../../assets/images/menu/zhenren/ebet.jpg"
                       width="188"
                       height="120"
                       alt="EBet"
@@ -393,7 +393,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/ag.jpg"
+                      src="../../assets/images/menu/zhenren/ag.jpg"
                       width="188"
                       height="120"
                       alt="AG"
@@ -432,7 +432,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/zhenren/hg.jpg"
+                      src="../../assets/images/menu/zhenren/hg.jpg"
                       width="188"
                       height="120"
                       alt="HG"
@@ -465,7 +465,7 @@
             <li>
               <a class="drop-down" href="#">
                 <img
-                  src="../assets/images/menu/hot.svg"
+                  src="../../assets/images/menu/hot.svg"
                   width="38"
                   height="18"
                   alt="人气"
@@ -477,7 +477,7 @@
                   <li class="is-hot">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/sport/saba3.jpg"
+                      src="../../assets/images/menu/sport/saba3.jpg"
                       width="330"
                       height="120"
                       alt="沙巴体育"
@@ -507,7 +507,7 @@
                   <li class="is-hot">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/sport/ysb2.jpg"
+                      src="../../assets/images/menu/sport/ysb2.jpg"
                       width="330"
                       height="120"
                       alt="YSB"
@@ -537,7 +537,7 @@
                   <li class="is-hot">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/sport/xj2.jpg"
+                      src="../../assets/images/menu/sport/xj2.jpg"
                       width="330"
                       height="120"
                       alt="小金"
@@ -567,7 +567,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/sport/im2.jpg"
+                      src="../../assets/images/menu/sport/im2.jpg"
                       width="330"
                       height="120"
                       alt="IM"
@@ -604,7 +604,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/esport/ia.jpg"
+                      src="../../assets/images/menu/esport/ia.jpg"
                       width="330"
                       height="120"
                       alt="IA ESports"
@@ -614,7 +614,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/esport/im.jpg"
+                      src="../../assets/images/menu/esport/im.jpg"
                       width="330"
                       height="120"
                       alt="IM ESports"
@@ -624,7 +624,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/esport/sb.jpg?v=2"
+                      src="../../assets/images/menu/esport/sb.jpg?v=2"
                       width="330"
                       height="120"
                       alt="SB ESports"
@@ -634,7 +634,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/esport/kg2.jpg"
+                      src="../../assets/images/menu/esport/kg2.jpg"
                       width="330"
                       height="120"
                       alt="LH ESports"
@@ -651,7 +651,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/slot/all-games.jpg"
+                      src="../../assets/images/menu/slot/all-games.jpg"
                       width="310"
                       height="120"
                       alt="电子游戏"
@@ -662,7 +662,7 @@
                     <a class="skew-slides-container" href="#" target="_blank" rel="noopener">
                       <figure class="skew-slides">
                         <img
-                          src="../assets/images/menu/slot/popular6.jpg"
+                          src="../../assets/images/menu/slot/popular6.jpg"
                           width="492"
                           height="120"
                           alt="PP电游"
@@ -676,7 +676,7 @@
             <li>
               <a class="drop-down" href="#">
                 <img
-                  src="../assets/images/menu/new.svg"
+                  src="../../assets/images/menu/new.svg"
                   width="38"
                   height="18"
                   alt="新品"
@@ -688,7 +688,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/ag.jpg"
+                      src="../../assets/images/menu/fishing/ag.jpg"
                       width="165"
                       height="120"
                       alt="捕鱼王3D"
@@ -698,7 +698,7 @@
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/ky.jpg"
+                      src="../../assets/images/menu/fishing/ky.jpg"
                       width="165"
                       height="120"
                       alt="红包捕鱼"
@@ -708,7 +708,7 @@
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/mwg2.jpg"
+                      src="../../assets/images/menu/fishing/mwg2.jpg"
                       width="165"
                       height="120"
                       alt="捕鱼大满贯"
@@ -718,7 +718,7 @@
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/pp.jpg"
+                      src="../../assets/images/menu/fishing/pp.jpg"
                       width="165"
                       height="120"
                       alt="王者捕鱼"
@@ -728,7 +728,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/tpg360.jpg"
+                      src="../../assets/images/menu/fishing/tpg360.jpg"
                       width="165"
                       height="120"
                       alt="多彩捕鱼360"
@@ -738,7 +738,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/tpg2.jpg"
+                      src="../../assets/images/menu/fishing/tpg2.jpg"
                       width="165"
                       height="120"
                       alt="金多多捕鱼360"
@@ -748,7 +748,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/mwg.jpg"
+                      src="../../assets/images/menu/fishing/mwg.jpg"
                       width="165"
                       height="120"
                       alt="千炮捕鱼"
@@ -758,7 +758,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/fishing/tpg.jpg"
+                      src="../../assets/images/menu/fishing/tpg.jpg"
                       width="165"
                       height="120"
                       alt="TPG捕鱼王"
@@ -774,7 +774,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/loto/kg.jpg"
+                      src="../../assets/images/menu/loto/kg.jpg"
                       width="250"
                       height="120"
                       alt="KG奇乐彩"
@@ -804,7 +804,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/loto/vr.jpg"
+                      src="../../assets/images/menu/loto/vr.jpg"
                       width="250"
                       height="120"
                       alt="VR彩票"
@@ -834,7 +834,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/loto/ig.jpg"
+                      src="../../assets/images/menu/loto/ig.jpg"
                       width="250"
                       height="120"
                       alt="IG彩票"
@@ -864,7 +864,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../assets/images/menu/loto/lbkeno.jpg"
+                      src="../../assets/images/menu/loto/lbkeno.jpg"
                       width="250"
                       height="120"
                       alt="LB 奇乐彩"
