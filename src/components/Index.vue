@@ -10,7 +10,7 @@ import CompIndexSlider from './CompIndexSlider'
 import CompIndexFeatures from './CompIndexFeatures'
 
 export default {
-  name: 'comp-index',
+  name: 'Index',
   data () {
     return {}
   },

@@ -1,15 +1,17 @@
 <template>
-<div></div>
+  <p>aaa</p>
 </template>
 
 <script>
 export default {
-  name: 'comp-layout',
+  name: 'register',
   data () {
-    return {}
+    return {
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
+
 </style>
