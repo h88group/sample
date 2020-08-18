@@ -3,7 +3,7 @@
     <div id="main-header" class>
       <div class="main-header__inner container" style="width: 1320px;">
         <section class="main-header__left">
-          <a href="/">
+          <router-link :to="{ name: 'Index' }">
             <img class="header-logo" src="../../assets/images/logo.png" width="266" height="80" alt />
             <img
               class="header-logo--condensed"
@@ -12,7 +12,7 @@
               width="133"
               height="44"
             />
-          </a>
+          </router-link>
         </section>
         <section class="main-header__right">
           <div class="top">
