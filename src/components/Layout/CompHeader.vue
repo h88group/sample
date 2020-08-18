@@ -3,7 +3,7 @@
     <div id="main-header" class>
       <div class="main-header__inner container" style="width: 1320px;">
         <section class="main-header__left">
-          <a href="index.html">
+          <a href="/">
             <img class="header-logo" src="../../assets/images/logo.png" width="266" height="80" alt />
             <img
               class="header-logo--condensed"
@@ -30,7 +30,7 @@
                 </span>
                 <button type="submit" class="btn">登入</button>
               </form>
-              <a class="btn gray" href="register.html">注册</a>
+              <router-link class="btn gray" :to="{ name: 'Register' }">注册</router-link>
             </span>
             <span class="main-header__login-form main-header-condensed-menu">
               <a class="btn open-modal-login">登入</a>
