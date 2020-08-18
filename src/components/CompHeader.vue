@@ -5,20 +5,37 @@
         <section class="main-header__left">
           <a href="index.html">
             <img class="header-logo" src="../assets/images/logo.png" width="266" height="80" alt />
-            <img class="header-logo--condensed" src="../assets/images/logo2.png" alt width="133" height="44" />
+            <img
+              class="header-logo--condensed"
+              src="../assets/images/logo2.png"
+              alt
+              width="133"
+              height="44"
+            />
           </a>
         </section>
         <section class="main-header__right">
           <div class="top">
-           <span class="item hide--condensed"> <a class="open-modal-forgot-password" role="button">忘记密码</a> </span> <span id="header-login-form" class="main-header-wide-menu main-header__login-form">
-          <form>
-            <input type="text" name="username" placeholder="账号">
-            <span class="form-toggle-password-wrapper">
-            <input class="input--password" type="password" name="password" placeholder="密码">
-            <a class="btn-toggle-password" role="button"><i class="icon icon--toggle-password"></i></a> </span>
-            <button type="submit" class="btn">登入</button>
-          </form>
-            <a class="btn gray" href="register.html">注册</a> </span> <span class="main-header__login-form main-header-condensed-menu"> <a class="btn open-modal-login">登入</a> <a class="btn gray" href="register.html">注册</a> </span>
+            <span class="item hide--condensed">
+              <a class="open-modal-forgot-password" role="button">忘记密码</a>
+            </span>
+            <span id="header-login-form" class="main-header-wide-menu main-header__login-form">
+              <form>
+                <input type="text" name="username" placeholder="账号" />
+                <span class="form-toggle-password-wrapper">
+                  <input class="input--password" type="password" name="password" placeholder="密码" />
+                  <a class="btn-toggle-password" role="button">
+                    <i class="icon icon--toggle-password"></i>
+                  </a>
+                </span>
+                <button type="submit" class="btn">登入</button>
+              </form>
+              <a class="btn gray" href="register.html">注册</a>
+            </span>
+            <span class="main-header__login-form main-header-condensed-menu">
+              <a class="btn open-modal-login">登入</a>
+              <a class="btn gray" href="register.html">注册</a>
+            </span>
             <span class="item hide--condensed">
               <a href="cashier.html">
                 <i class="icon icon--svg icon--wallet">
@@ -895,6 +912,25 @@ export default {
   name: 'comp-header',
   data () {
     return {}
+  },
+  methods: {
+    handleSCroll (event) {
+      let header = document.querySelector('#main-header')
+      if (
+        window.scrollY > 80 &&
+        !header.className.includes('main-header--condensed')
+      ) {
+        header.classList.add('main-header--condensed')
+      } else if (window.scrollY < 100) {
+        header.classList.remove('main-header--condensed')
+      }
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleSCroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleSCroll)
   }
 }
 </script>
