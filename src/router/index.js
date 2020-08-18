@@ -7,6 +7,7 @@ import Terms from '@/components/SitemapContent/Terms'
 import Privacy from '@/components/SitemapContent/Privacy'
 import ResponsibleGaming from '@/components/SitemapContent/ResponsibleGaming'
 import Contact from '@/components/SitemapContent/Contact'
+import Guide from '@/components/SitemapContent/Guide'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/contact.html',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/guide.html',
+      name: 'Guide',
+      component: Guide
     }
   ]
 })

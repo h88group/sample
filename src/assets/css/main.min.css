@@ -3917,7 +3917,7 @@ display:none
 }
 .step-by-step-guide__carousel .slick-dots {
     display: table;
-    margin: 35px auto 0;
+    margin: 32px auto 0;
     position: inherit;
     bottom: 0;
 }
@@ -3937,6 +3937,25 @@ display:none
     width: 16px;
     height: 16px;
     font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    text-decoration: none;
+    background-color: #e3e3e3
+}
+.step-by-step-guide__carousel .slick-dots li.slick-active button {
+    background-color: #fd3153
+}
+.step-by-step-guide__carousel .slick-dots li button::before{
+    content: none;
+}
+.step-by-step-guide__carousel .slick-dots li button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    line-height: 8px!important;
+    padding: 0;
     color: #fff;
     text-align: center;
     line-height: 15px;
