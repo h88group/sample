@@ -11,7 +11,7 @@ import Guide from '@/components/SitemapContent/Guide'
 
 Vue.use(Router)
 
-export default new Router({
+var router = new Router({
   mode: 'history',
   routes: [
     {
@@ -54,5 +54,10 @@ export default new Router({
       name: 'Guide',
       component: Guide
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
+
+export default router
