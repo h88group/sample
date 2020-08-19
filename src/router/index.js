@@ -8,6 +8,7 @@ import Privacy from '@/components/SitemapContent/Privacy'
 import ResponsibleGaming from '@/components/SitemapContent/ResponsibleGaming'
 import Contact from '@/components/SitemapContent/Contact'
 import Guide from '@/components/SitemapContent/Guide'
+import Account from '@/components/Members/account'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ var router = new Router({
       path: '/guide.html',
       name: 'Guide',
       component: Guide
+    },
+    {
+      path: '/members/account.html',
+      name: 'Account',
+      component: Account
     }
   ],
   scrollBehavior (to, from, savedPosition) {

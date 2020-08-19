@@ -37,7 +37,7 @@
               <router-link class="btn gray" :to="{ name: 'Register' }">注册</router-link>
             </span>
             <span class="item hide--condensed">
-              <a href="cashier.html">
+              <router-link :to="{ name: 'Cashier' }">
                 <i class="icon icon--svg icon--wallet">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,10 +50,10 @@
                     />
                   </svg>
                 </i> 存款
-              </a>
+              </router-link>
             </span>
             <span class="item stick hide--condensed">
-              <a href="withdrawal.html">
+              <router-link :to="{ name: 'Withdrawal' }">
                 <i class="icon icon--svg icon--wallet">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,12 +66,12 @@
                     />
                   </svg>
                 </i> 提款
-              </a>
+              </router-link>
             </span>
-            <span class="item stick hide--condensed mini-cashier-button">
-              <a href="account.html">
+            <span class="item stick hide--condensed mini-cashier-button" v-on:mouseover="mouseover">
+              <router-link :to="{ name: 'Account' }">
                 <i class="icon icon--money"></i> 余额
-              </a>
+              </router-link>
               <div id="mini-cashier" class="mini-cashier-wrapper">
                 <section class="mini-cashier-container">
                   <header class="mini-cashier__header">
@@ -220,16 +220,16 @@
               </div>
             </span>
             <span class="item stick hide--condensed">
-              <a href="message.html">
+              <router-link :to="{ name: 'Message' }">
                 <i class="icon icon-envelop"></i>
                 <span class="message-notice has-message"></span> 信息
-              </a>
+              </router-link>
             </span>
             <span class="item">
-              <a href="profile.html" title="普通会员">
+              <router-link :to="{ name: 'Profile' }">
                 <img src="../../assets/images/shield.svg" width="34" height="32" alt /> 您好,
                 <strong>mat88993</strong>
-              </a>
+              </router-link>
             </span>
             <a class="btn" href="#">登出</a>
           </div>
@@ -941,6 +941,9 @@ export default {
     },
     hideModal () {
       this.$refs.modalLogin.actHideModal()
+    },
+    mouseover: function () {
+      document.body.classList.add('is-showing-mini-cashier')
     }
   },
   created () {
