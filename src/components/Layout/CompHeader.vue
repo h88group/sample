@@ -17,7 +17,7 @@
         <section class="main-header__right">
           <div class="top">
             <span class="item hide--condensed">
-              <a class="open-modal-forgot-password" role="button">忘记密码</a>
+              <a @click="showModalPassword()" class="open-modal-forgot-password" role="button">忘记密码</a>
             </span>
             <span id="header-login-form" class="main-header-wide-menu main-header__login-form">
               <form>
@@ -33,7 +33,7 @@
               <router-link class="btn gray" :to="{ name: 'Register' }">注册</router-link>
             </span>
             <span class="main-header__login-form main-header-condensed-menu">
-              <a class="btn open-modal-login">登入</a>
+              <a @click="showModal()" class="btn open-modal-login">登入</a>
               <router-link class="btn gray" :to="{ name: 'Register' }">注册</router-link>
             </span>
             <span class="item hide--condensed">
@@ -904,14 +904,20 @@
         </section>
       </div>
     </div>
+    <comp-modal ref="modalLogin"></comp-modal>
   </header>
 </template>
 
 <script>
+import CompModal from '../Modal/CompModal'
+
 export default {
   name: 'comp-header',
   data () {
     return {}
+  },
+  components: {
+    CompModal
   },
   methods: {
     handleSCroll (event) {
@@ -924,6 +930,17 @@ export default {
       } else if (window.scrollY < 100) {
         header.classList.remove('main-header--condensed')
       }
+    },
+    showModal () {
+      this.$refs.modalLogin.actShowModal()
+      this.$refs.modalLogin.IsLogin()
+    },
+    showModalPassword () {
+      this.$refs.modalLogin.actShowModal()
+      this.$refs.modalLogin.IsForgotPassword()
+    },
+    hideModal () {
+      this.$refs.modalLogin.actHideModal()
     }
   },
   created () {

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <comp-modal />
     <comp-header />
     <router-view />
     <comp-sitemap />
@@ -12,13 +13,15 @@
 import CompHeader from './components/Layout/CompHeader'
 import CompFooter from './components/Layout/CompFooter'
 import CompSitemap from './components/Layout/CompSitemap'
+import CompModal from './components/Modal/CompModal'
 
 export default {
   name: 'App',
   components: {
     CompHeader,
     CompFooter,
-    CompSitemap
+    CompSitemap,
+    CompModal
   }
 }
 </script>
