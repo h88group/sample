@@ -9,6 +9,7 @@ import ResponsibleGaming from '@/components/SitemapContent/ResponsibleGaming'
 import Contact from '@/components/SitemapContent/Contact'
 import Guide from '@/components/SitemapContent/Guide'
 import Account from '@/components/Members/account'
+import Profile from '@/components/Members/Profile/Profile'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ var router = new Router({
       path: '/members/account.html',
       name: 'Account',
       component: Account
+    },
+    {
+      path: '/members/profile.html',
+      name: 'Profile',
+      component: Profile
     }
   ],
   scrollBehavior (to, from, savedPosition) {
