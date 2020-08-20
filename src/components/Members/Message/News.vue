@@ -3,7 +3,13 @@
     <comp-members-left-menu />
     <section class="member__container">
       <message-nav />
-      news
+      <section class="member-message-wrapper">
+        <div class="tab-content">
+          <div id="news" class="tab-pane active" role="tabpanel">
+            news
+          </div>
+        </div>
+      </section>
     </section>
   </article>
 </template>

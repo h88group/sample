@@ -4578,6 +4578,411 @@ display:none
 .secure-pin-step1 .form-label {
     width: 125px
 }
+.member-badge.twenty-four-hours-transfer {
+    width: 132px;
+    height: 90px;
+    margin: 0 auto;
+    background-position: -2px 2px;
+    background-size: 670px 115px
+}
+.member-bonus-wrapper, .member-cashier-wrapper, .member-message-wrapper {
+    position: relative
+}
+.member-bonus-wrapper .tab-content, .member-cashier-wrapper .tab-content, .member-message-wrapper .tab-content {
+    width: inherit;
+    min-width: 920px;
+}
+.member-bonus-wrapper .form-bank-list, .member-cashier-wrapper .form-bank-list, .member-message-wrapper .form-bank-list {
+    padding-left: 4px
+}
+.bonus-application {
+    background: url("../images/member/apply-bonus2.png") right -5px bottom -3px no-repeat;
+    background-size: 367px 181px
+}
+.admin-inbox form {
+    position: relative
+}
+.admin-inbox-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 275px;
+    height: 180px;
+    background: url("../images/member/message2.png") -10px -170px no-repeat;
+    background-size: 314px 363px
+}
+.table-body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    background-color: #fff
+}
+.table-row {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 28px
+}
+.table-column {
+    display: inline-block;
+    text-align: center;
+    padding: 0 5px;
+    line-height: 28px
+}
+.table-body .table-row {
+    min-height: 30px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.my-inbox__content {
+    margin-bottom: 0;
+    border: 1px solid #cacaca;
+    background-color: #f9f9f9;
+    list-style: none;
+}
+.my-inbox__content>li {
+    margin: 0 15px
+}
+.my-inbox__content>li:not(:last-child) {
+    border-bottom: 1px solid #cacaca
+}
+.my-inbox__content .table-column {
+    display: inline-block;
+    min-height: 45px;    
+    text-align: center;
+    padding: 0 5px;
+    line-height: 28px;
+}
+.my-inbox__content .controls {
+    width: 60px;
+    padding: 0
+}
+.my-inbox__content .message-status {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #55cb7f;
+    vertical-align: middle
+}
+.my-inbox__content .form-checkbox {
+    vertical-align: middle
+}
+.my-inbox__content .type {
+    width: 60px;
+    text-align: right;
+    padding: 0
+}
+.my-inbox__content .content {
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: left;
+    word-break: break-all
+}
+.my-inbox__content .icon-angle {
+    width: 9px;
+    height: 5px;
+    margin-left: 5px;
+    background-position: -9px -280px;
+    transition: all 250ms ease-in
+}
+.my-inbox__content .icon-reply {
+    width: 17px;
+    height: 14px;
+    margin-left: -5px;
+    background: url("../images/member-ui.svg") -320px -35px no-repeat
+}
+.my-inbox__content .message-drawer {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1px;
+    background-color: #e6e6e6;
+    transition: height .3s ease-in
+}
+.my-inbox__content .message-drawer__inner {
+    padding: 10px 0;
+    line-height: 1.6
+}
+.my-inbox__content .message-drawer__inner .timestamp {
+    color: #b1b1b1
+}
+.my-inbox__content .message-drawer__row {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.my-inbox__content .message-drawer__label {
+    width: 60px;
+    text-align: right
+}
+.my-inbox__content .message-drawer__reply {
+    position: relative;
+    height: 115px;
+    display: none;
+    opacity: 0;
+    padding: 10px 15px 10px 58px;
+    transition: opacity .3s ease-in
+}
+.my-inbox__content .message-drawer__reply.is-visible {
+    display: block;
+    opacity: 1
+}
+.my-inbox__content .message-drawer__reply .button-reply {
+    position: absolute;
+    top: -22px;
+    right: 15px;
+    width: 70px;
+    border-radius: 0;
+    background-color: #fd3153
+}
+.my-inbox__content .message-drawer__reply .button-reply::before {
+    content: "";
+    position: absolute;
+    right: 70px;
+    display: inline-block;
+    width: 110px;
+    height: 26px;
+    background-color: #e6e6e6
+}
+.my-inbox__content .message-drawer__reply .button-reply:focus {
+    outline: 0
+}
+.my-inbox__content .message-drawer__reply textarea {
+    width: 100%;
+    height: 91px;
+    border: 1px solid #d4d4d4;
+    padding: 5px 10px
+}
+.my-inbox__content .toggle-message-reply {
+    cursor: pointer
+}
+.my-inbox__content .toggle-message-drawer {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    cursor: pointer
+}
+.my-inbox__content .toggle-message-drawer input[type=checkbox] {
+    display: none
+}
+.my-inbox__content .is-admin-reply {
+    color: #505050
+}
+.my-inbox__content .is-admin-reply .content {
+    padding-left: 5px
+}
+.my-inbox__content .is-read .message-status {
+    background-color: #cacaca
+}
+.my-inbox__content .is-expanded .table-row {
+    margin-top: 1px;
+    background-color: #f2f2f2
+}
+.my-inbox__content .is-expanded .icon-angle {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg)
+}
+.inbox-header {
+    width: 515px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 14px
+}
+.inbox-header .header__type {
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative
+}
+.inbox-header .header__type::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fd3153;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle
+}
+.inbox-header .header__type.is-active::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    background: #fd3153;
+    border-radius: 50%
+}
+.inbox-wrapper {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px
+}
+.inbox-message-list {
+    width: 515px;
+    height: 500px;
+    overflow-y: auto;
+    scrollbar-face-color: #fd3153;
+    scrollbar-base-color: none;
+    scrollbar-track-color: none
+}
+.inbox-message-list::-webkit-scrollbar {
+width:10px
+}
+.inbox-message-list::-webkit-scrollbar-thumb {
+opacity:.6;
+border:3px solid transparent;
+border-top:0;
+border-bottom:0;
+background-clip:content-box;
+background-color:#fd3153
+}
+.inbox-message-list::-webkit-scrollbar-track {
+background-color:transparent
+}
+.inbox-message-list li {
+    cursor: pointer
+}
+.inbox-message-list li:hover {
+    background-color: #f2f2f2
+}
+.inbox-message-list .table-body {
+    display: none
+}
+.inbox-message-list .table-column {
+    min-height: 50px;
+    line-height: 50px
+}
+.inbox-message-list .message__thumbnail {
+    margin-right: 5px
+}
+.inbox-message-list .timestamp {
+    position: relative;
+    width: 165px;
+    border-left: 0!important
+}
+.inbox-message-list .timestamp::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 3px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: grey
+}
+.inbox-message-list .timestamp::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 50px;
+    background: url(https://media.wvwuwvuwvw.com/e8fe/images/member/member-ui.svg) -485px 1px no-repeat
+}
+.inbox-message-list .content {
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-left: 0!important;
+    padding-left: 10px
+}
+.inbox-message-list .status {
+    width: 80px
+}
+.inbox-message-list .is-unread {
+    color: #008aff
+}
+.inbox-message-list .is-unread .timestamp::before {
+    background-color: #008aff
+}
+.inbox-message-list input[type=radio] {
+    display: none
+}
+.inbox-message-list input[type=radio]:checked+.table-body {
+    display: block
+}
+.inbox-reading-pane {
+    position: relative;
+    width: 320px;
+    margin-left: 35px
+}
+.inbox-reading-pane__header {
+    padding: 10px 13px 0;
+    border: 1px solid #d4d4d4;
+    border-bottom: none 0
+}
+.inbox-reading-pane__header .title {
+    font-size: 16px;
+    color: #fd3153;
+    font-weight: 400;
+    margin: 0 0 10px
+}
+.inbox-reading-pane__header .timestamp {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 15px 0
+}
+.inbox-reading-pane__body {
+    position: relative;
+    min-height: 110px;
+    padding: 10px 10px 100px;
+    border: 1px solid #d4d4d4;
+    border-top: none 0
+}
+.inbox-reading-pane__body::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: -16px;
+    display: inline-block;
+    width: 165px;
+    height: 97px;
+    background: url(https://media.wvwuwvuwvw.com/e8fe/images/member/member-ui.svg) -30px -150px no-repeat
+}
+.inbox-reading-pane__body.has-url::after {
+    display: none
+}
+.inbox-reading-pane__body .reading-pane__footer-button {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+
+
 
 
 
