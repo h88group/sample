@@ -8,24 +8,65 @@
         <h3> 安全设置 <br>
           <small>绑定所有资料，提升安全保障。</small> </h3>
       </li>
-      <li class="setting-item"> <i class="setting-icon username verified"></i> 已绑定姓名 </li>
-      <li class="setting-item"> <i class="setting-icon identification"></i> <a class="open-modal" data-modal="#modal-ic-binding" role="button">未绑定</a>身份证号码 </li>
-      <li class="setting-item"> <i class="setting-icon email verified"></i> 已绑定邮箱 </li>
-      <li class="setting-item"> <i class="setting-icon phone"></i> <a class="open-modal" data-modal="#modal-phone-binding" role="button">未绑定</a>手机 </li>
+      <li class="setting-item"> <i class="setting-icon username"></i> <a @click="showModalName()" role="button">未绑定</a>姓名 </li>
+      <li class="setting-item"> <i class="setting-icon identification"></i> <a @click="showModalIc()" role="button">未绑定</a>身份证号码 </li>
+      <li class="setting-item"> <i class="setting-icon email"></i> <a @click="showModalEmail()" role="button">未绑定</a>邮箱 </li>
+      <li class="setting-item"> <i class="setting-icon phone"></i> <a @click="showModalPhone()" role="button">未绑定</a>手机 </li>
       <li>
         <p class="form-error-text"></p>
       </li>
       <li> *绑定资料及进行<span class="highlight">10次</span>存款即可领取奖赏。 </li>
       <li>奖金只需达到5千元流水量即可申请提款</li>
     </ul>
+    <profile-modal-name ref="profileModalName" />
+    <profile-modal-ic ref="profileModalIc" />
+    <profile-modal-email ref="profileModalEmail" />
+    <profile-modal-phone ref="profileModalPhone" />
   </div>
 </template>
 
 <script>
+import ProfileModalName from './ProfileModal/ProfileModalName'
+import ProfileModalIc from './ProfileModal/ProfileModalIc'
+import ProfileModalEmail from './ProfileModal/ProfileModalEmail'
+import ProfileModalPhone from './ProfileModal/ProfileModalPhone'
+
 export default {
   name: 'profile-setting',
+  components: {
+    ProfileModalName,
+    ProfileModalIc,
+    ProfileModalEmail,
+    ProfileModalPhone
+  },
   data () {
     return {
+    }
+  },
+  methods: {
+    showModalName () {
+      this.$refs.profileModalName.actShowModal()
+    },
+    hideModalName () {
+      this.$refs.profileModalName.actHideModal()
+    },
+    showModalIc () {
+      this.$refs.profileModalIc.actShowModal()
+    },
+    hideModalIc () {
+      this.$refs.profileModalIc.actHideModal()
+    },
+    showModalEmail () {
+      this.$refs.profileModalEmail.actShowModal()
+    },
+    hideModalEmail () {
+      this.$refs.profileModalEmail.actHideModal()
+    },
+    showModalPhone () {
+      this.$refs.profileModalPhone.actShowModal()
+    },
+    hideModalPhone () {
+      this.$refs.profileModalPhone.actHideModal()
     }
   }
 }

@@ -10,6 +10,9 @@ import Contact from '@/components/SitemapContent/Contact'
 import Guide from '@/components/SitemapContent/Guide'
 import Account from '@/components/Members/account'
 import Profile from '@/components/Members/Profile/Profile'
+import ProfilePassword from '@/components/Members/Profile/ProfilePassword'
+import ProfileChangepin from '@/components/Members/Profile/ProfileChangepin'
+import ProfilePin from '@/components/Members/Profile/ProfilePin'
 
 Vue.use(Router)
 
@@ -65,6 +68,21 @@ var router = new Router({
       path: '/members/profile.html',
       name: 'Profile',
       component: Profile
+    },
+    {
+      path: '/members/profile/password.html',
+      name: 'ProfilePassword',
+      component: ProfilePassword
+    },
+    {
+      path: '/members/profile/changepin.html',
+      name: 'ProfileChangepin',
+      component: ProfileChangepin
+    },
+    {
+      path: '/members/profile/pin.html',
+      name: 'ProfilePin',
+      component: ProfilePin
     }
   ],
   scrollBehavior (to, from, savedPosition) {

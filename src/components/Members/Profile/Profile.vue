@@ -46,11 +46,719 @@
                 <button type="submit" class="button red" style="transform: translateY(2px);">验证</button>
               </div>
             </form>
+            <form>
+              <p class="form-error-text">个人资料更新成功！</p>
+              <div class="member-profile">
+                <ul class="off">
+                  <li>
+                    <div class="form-label">姓名 :</div>
+                    <div class="form-control" id="member-bind-name">
+                      <div></div>
+                      <a @click="showModalName()" class="modal-name-binding">立即绑定姓名</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">昵称 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="nickname">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">性别 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <label class="form-radio">
+                          <input type="radio" name="gender" value="1">
+                          男</label>
+                        <label class="form-radio">
+                          <input type="radio" name="gender" value="2">
+                          女</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">生日日期 :</div>
+                    <div class="form-control" id="member-bind-bd">
+                      <div> <span></span>-<span></span>-<span></span> </div>
+                      <a @click="showModalIc()" class="open-modal" data-modal="#modal-ic-binding" role="button">立即绑定生日日期</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">身份证号码 :</div>
+                    <div class="form-control" id="member-bind-ic">
+                      <div></div>
+                      <a @click="showModalIc()" class="open-modal" data-modal="#modal-ic-binding" role="button">立即绑定身份证号码</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">电子邮箱 :</div>
+                    <div class="form-control" id="member-bind-email">
+                      <div></div>
+                      <a @click="showModalEmail()" class="open-modal" data-modal="#modal-email-binding" role="button">立即绑定电子邮箱</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">手机号码 :</div>
+                    <div class="form-control" id="member-bind-phone">
+                      <div></div>
+                      <a @click="showModalPhone()" class="open-modal" data-modal="#modal-phone-binding" role="button">立即绑定手机号码</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">存款通知 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span>不通知</span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <label class="form-radio">
+                          <input type="radio" name="SMSDFLAG" value="2">
+                          通知</label>
+                        <label class="form-radio">
+                          <input type="radio" name="SMSDFLAG" value="0" checked="checked">
+                          不通知</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">提款通知 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span>不通知</span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <label class="form-radio">
+                          <input type="radio" name="SMSWFLAG" value="2">
+                          通知</label>
+                        <label class="form-radio">
+                          <input type="radio" name="SMSWFLAG" value="0" checked="checked">
+                          不通知</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="off">
+                  <li>
+                    <div class="form-label">国家 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> </div>
+                      <div class="edit-control">
+                        <div class="form-select">
+                          <select name="country">
+                            <option value="42">中华人民共和国</option>
+                            <option value="39">中非共和国</option>
+                            <option value="54">丹麦</option>
+                            <option value="195">乌克兰</option>
+                            <option value="201">乌兹别克斯坦</option>
+                            <option value="194">乌干达</option>
+                            <option value="199">乌拉圭</option>
+                            <option value="40">乍得</option>
+                            <option value="208">也门</option>
+                            <option value="11">亚美尼亚</option>
+                            <option value="96">以色列</option>
+                            <option value="93">伊拉克</option>
+                            <option value="94">伊朗</option>
+                            <option value="21">伯里兹</option>
+                            <option value="37">佛得角群岛</option>
+                            <option value="158">俄罗斯</option>
+                            <option value="31">保加利亚</option>
+                            <option value="50">克罗地亚</option>
+                            <option value="80">关岛</option>
+                            <option value="73">冈比亚</option>
+                            <option value="90">冰岛</option>
+                            <option value="83">几内亚</option>
+                            <option value="84">几内亚比绍</option>
+                            <option value="113">列支敦士登</option>
+                            <option value="45">刚果</option>
+                            <option value="53">刚果人民 民主共和国</option>
+                            <option value="112">利比亚</option>
+                            <option value="111">利比里亚</option>
+                            <option value="36">加拿大</option>
+                            <option value="76">加纳</option>
+                            <option value="72">加蓬</option>
+                            <option value="89">匈牙利</option>
+                            <option value="103">北朝鲜</option>
+                            <option value="169">南非</option>
+                            <option value="104">南韩</option>
+                            <option value="27">博茨瓦纳</option>
+                            <option value="155">卡塔尔</option>
+                            <option value="157">卢旺达</option>
+                            <option value="115">卢森堡</option>
+                            <option value="91">印度</option>
+                            <option value="92">印度尼西亚</option>
+                            <option value="82">危地马拉</option>
+                            <option value="58">厄瓜多尔</option>
+                            <option value="63">厄立特里亚</option>
+                            <option value="182">叙利亚</option>
+                            <option value="49">古巴</option>
+                            <option value="212">台湾</option>
+                            <option value="106">吉尔吉斯斯坦</option>
+                            <option value="55">吉布提</option>
+                            <option value="101">哈撒克斯坦</option>
+                            <option value="44">哥伦比亚</option>
+                            <option value="47">哥斯达黎加</option>
+                            <option value="35">喀麦隆</option>
+                            <option value="191">土库曼斯坦</option>
+                            <option value="192">土耳其和凯科斯群岛</option>
+                            <option value="178">圣卢西亚</option>
+                            <option value="177">圣基茨和尼维斯联邦</option>
+                            <option value="160">圣多美和普林西比</option>
+                            <option value="179">圣文森特和格林纳丁斯群岛</option>
+                            <option value="159">圣马力诺</option>
+                            <option value="85">圭亚那</option>
+                            <option value="185">坦桑尼亚</option>
+                            <option value="59">埃及</option>
+                            <option value="65">埃塞俄比亚</option>
+                            <option value="184">塔吉克斯坦</option>
+                            <option value="183">塔希提岛</option>
+                            <option value="163">塞内加尔</option>
+                            <option value="209">塞尔维亚黑山</option>
+                            <option value="165">塞拉里昂</option>
+                            <option value="51">塞浦路斯</option>
+                            <option value="164">塞舌尔群岛</option>
+                            <option value="126">墨西哥</option>
+                            <option value="187">多哥</option>
+                            <option value="57">多米尼加共和国</option>
+                            <option value="56">多米尼加群岛</option>
+                            <option value="14">奥地利</option>
+                            <option value="203">委内瑞拉</option>
+                            <option value="18">孟加拉国</option>
+                            <option value="8">安哥拉</option>
+                            <option value="7">安圭拉岛</option>
+                            <option value="9">安提瓜及巴布达岛</option>
+                            <option value="6">安道尔</option>
+                            <option value="139">尼加拉瓜</option>
+                            <option value="141">尼日利亚</option>
+                            <option value="140">尼日尔</option>
+                            <option value="134">尼泊尔</option>
+                            <option value="146">巴勒斯坦</option>
+                            <option value="16">巴哈马群岛</option>
+                            <option value="145">巴基斯坦</option>
+                            <option value="19">巴巴多斯</option>
+                            <option value="148">巴布亚新几内亚</option>
+                            <option value="149">巴拉圭</option>
+                            <option value="147">巴拿马</option>
+                            <option value="17">巴林</option>
+                            <option value="28">巴西</option>
+                            <option value="32">布基纳法索</option>
+                            <option value="33">布隆迪</option>
+                            <option value="78">希腊</option>
+                            <option value="46">库克群岛</option>
+                            <option value="38">开曼群岛</option>
+                            <option value="75">德国</option>
+                            <option value="97">意大利</option>
+                            <option value="168">所罗门群岛</option>
+                            <option value="108">拉托维亚</option>
+                            <option value="143">挪威</option>
+                            <option value="52">捷克共和国</option>
+                            <option value="127">摩尔多瓦</option>
+                            <option value="130">摩洛哥</option>
+                            <option value="30">文莱塔鲁萨拉姆</option>
+                            <option value="67">斐济</option>
+                            <option value="173">斯威士兰</option>
+                            <option value="172">斯洛伐克</option>
+                            <option value="167">斯洛文尼亚</option>
+                            <option value="176">斯里兰卡</option>
+                            <option value="166">新加坡</option>
+                            <option value="137">新喀里多尼亚</option>
+                            <option value="138">新西兰</option>
+                            <option value="99">日本</option>
+                            <option value="41">智利</option>
+                            <option value="34">柬埔寨</option>
+                            <option value="79">格林纳达</option>
+                            <option value="218">格陵兰</option>
+                            <option value="74">格鲁吉亚</option>
+                            <option value="22">比利时</option>
+                            <option value="124">毛里塔尼亚</option>
+                            <option value="125">毛里求斯</option>
+                            <option value="188">汤加群岛</option>
+                            <option value="161">沙特阿拉伯</option>
+                            <option value="70">法国</option>
+                            <option value="69">法属圭亚那</option>
+                            <option value="66">法罗群岛</option>
+                            <option value="152">波兰队</option>
+                            <option value="154">波多黎哥</option>
+                            <option value="26">波斯尼亚-黑塞哥维那</option>
+                            <option value="186">泰国</option>
+                            <option value="210">津巴布韦</option>
+                            <option value="87">洪都拉斯</option>
+                            <option value="86">海地</option>
+                            <option value="13">澳大利亚</option>
+                            <option value="116">澳门</option>
+                            <option value="95">爱尔兰</option>
+                            <option value="64">爱沙尼亚</option>
+                            <option value="98">牙买加</option>
+                            <option value="193">特立尼达和多巴哥</option>
+                            <option value="25">玻利维亚</option>
+                            <option value="181">瑞典</option>
+                            <option value="174">瑞士</option>
+                            <option value="81">瓜德罗普岛</option>
+                            <option value="202">瓦努阿图</option>
+                            <option value="20">白俄罗斯</option>
+                            <option value="24">百慕大群岛</option>
+                            <option value="77">直布罗陀</option>
+                            <option value="105">科威特</option>
+                            <option value="48">科特迪瓦</option>
+                            <option value="150">秘鲁</option>
+                            <option value="189">突尼斯</option>
+                            <option value="114">立陶宛</option>
+                            <option value="170">索马里</option>
+                            <option value="100">约旦</option>
+                            <option value="133">纳米比亚</option>
+                            <option value="132">缅甸</option>
+                            <option value="156">罗马尼亚</option>
+                            <option value="200">美属维尔京群岛</option>
+                            <option value="5">美属萨摩亚群岛</option>
+                            <option value="107">老挝</option>
+                            <option value="102">肯尼亚</option>
+                            <option value="68">芬兰</option>
+                            <option value="180">苏里南</option>
+                            <option value="197">英国</option>
+                            <option value="29">英属维尔京群岛</option>
+                            <option value="136">荷兰安的列斯群岛</option>
+                            <option value="131">莫桑比克</option>
+                            <option value="110">莱索托</option>
+                            <option value="151">菲律宾</option>
+                            <option value="60">萨尔瓦多</option>
+                            <option value="153">葡萄牙</option>
+                            <option value="128">蒙古</option>
+                            <option value="129">蒙特塞拉特岛</option>
+                            <option value="171">西班牙</option>
+                            <option value="206">西萨摩亚群岛</option>
+                            <option value="23">贝宁</option>
+                            <option value="207">赞比亚</option>
+                            <option value="62">赤道几内亚</option>
+                            <option value="204">越南</option>
+                            <option value="15">阿塞拜疆</option>
+                            <option value="2">阿富汗</option>
+                            <option value="4">阿尔及利亚</option>
+                            <option value="3">阿尔巴尼亚</option>
+                            <option value="144">阿曼</option>
+                            <option value="10">阿根廷</option>
+                            <option value="196">阿联酋</option>
+                            <option value="12">阿鲁巴岛</option>
+                            <option value="214">马其顿</option>
+                            <option value="122">马尔代夫</option>
+                            <option value="118">马拉维</option>
+                            <option value="123">马提尼克岛</option>
+                            <option value="121">马来西亚</option>
+                            <option value="120">马耳他</option>
+                            <option value="117">马达加斯加</option>
+                            <option value="119">马里</option>
+                            <option value="109">黎巴嫩</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">所在地区 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="province2" style="width: 77px" placeholder="省">
+                        <input type="text" name="province1" style="width: 76px;" placeholder="市">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">邮政编号 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="postcode">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">住址 :</div>
+                    <div class="form-control"> <span class="non-edit-item"> <span></span> <br>
+                      </span> <span class="edit-control">
+                      <input type="text" name="address">
+                      </span> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">QQ :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="qq">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">微信号 :</div>
+                    <div class="form-control"> <span class="non-edit-item"> <span></span> <br>
+                      </span> <span class="edit-control">
+                      <input type="text" name="wechat">
+                      </span> </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="member-profile is-edit">
+                <ul class="off">
+                  <li>
+                    <div class="form-label">姓名 :</div>
+                    <div class="form-control" id="member-bind-name">
+                      <div></div>
+                      <a class="modal-name-binding">立即绑定姓名</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">昵称 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="nickname">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">性别 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <label class="form-radio">
+                          <input type="radio" name="gender" value="1">
+                          男</label>
+                        <label class="form-radio">
+                          <input type="radio" name="gender" value="2">
+                          女</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">生日日期 :</div>
+                    <div class="form-control" id="member-bind-bd">
+                      <div> <span></span>-<span></span>-<span></span> </div>
+                      <a class="open-modal" data-modal="#modal-ic-binding" role="button">立即绑定生日日期</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">身份证号码 :</div>
+                    <div class="form-control" id="member-bind-ic">
+                      <div></div>
+                      <a class="open-modal" data-modal="#modal-ic-binding" role="button">立即绑定身份证号码</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">电子邮箱 :</div>
+                    <div class="form-control" id="member-bind-email">
+                      <div></div>
+                      <a class="open-modal" data-modal="#modal-email-binding" role="button">立即绑定电子邮箱</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">手机号码 :</div>
+                    <div class="form-control" id="member-bind-phone">
+                      <div></div>
+                      <a class="open-modal" data-modal="#modal-phone-binding" role="button">立即绑定手机号码</a> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">存款通知 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span>不通知</span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <label class="form-radio">
+                          <input type="radio" name="SMSDFLAG" value="2">
+                          通知</label>
+                        <label class="form-radio">
+                          <input type="radio" name="SMSDFLAG" value="0" checked="checked">
+                          不通知</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">提款通知 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span>不通知</span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <label class="form-radio">
+                          <input type="radio" name="SMSWFLAG" value="2">
+                          通知</label>
+                        <label class="form-radio">
+                          <input type="radio" name="SMSWFLAG" value="0" checked="checked">
+                          不通知</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="off">
+                  <li>
+                    <div class="form-label">国家 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> </div>
+                      <div class="edit-control">
+                        <div class="form-select">
+                          <select name="country">
+                            <option value="42">中华人民共和国</option>
+                            <option value="39">中非共和国</option>
+                            <option value="54">丹麦</option>
+                            <option value="195">乌克兰</option>
+                            <option value="201">乌兹别克斯坦</option>
+                            <option value="194">乌干达</option>
+                            <option value="199">乌拉圭</option>
+                            <option value="40">乍得</option>
+                            <option value="208">也门</option>
+                            <option value="11">亚美尼亚</option>
+                            <option value="96">以色列</option>
+                            <option value="93">伊拉克</option>
+                            <option value="94">伊朗</option>
+                            <option value="21">伯里兹</option>
+                            <option value="37">佛得角群岛</option>
+                            <option value="158">俄罗斯</option>
+                            <option value="31">保加利亚</option>
+                            <option value="50">克罗地亚</option>
+                            <option value="80">关岛</option>
+                            <option value="73">冈比亚</option>
+                            <option value="90">冰岛</option>
+                            <option value="83">几内亚</option>
+                            <option value="84">几内亚比绍</option>
+                            <option value="113">列支敦士登</option>
+                            <option value="45">刚果</option>
+                            <option value="53">刚果人民 民主共和国</option>
+                            <option value="112">利比亚</option>
+                            <option value="111">利比里亚</option>
+                            <option value="36">加拿大</option>
+                            <option value="76">加纳</option>
+                            <option value="72">加蓬</option>
+                            <option value="89">匈牙利</option>
+                            <option value="103">北朝鲜</option>
+                            <option value="169">南非</option>
+                            <option value="104">南韩</option>
+                            <option value="27">博茨瓦纳</option>
+                            <option value="155">卡塔尔</option>
+                            <option value="157">卢旺达</option>
+                            <option value="115">卢森堡</option>
+                            <option value="91">印度</option>
+                            <option value="92">印度尼西亚</option>
+                            <option value="82">危地马拉</option>
+                            <option value="58">厄瓜多尔</option>
+                            <option value="63">厄立特里亚</option>
+                            <option value="182">叙利亚</option>
+                            <option value="49">古巴</option>
+                            <option value="212">台湾</option>
+                            <option value="106">吉尔吉斯斯坦</option>
+                            <option value="55">吉布提</option>
+                            <option value="101">哈撒克斯坦</option>
+                            <option value="44">哥伦比亚</option>
+                            <option value="47">哥斯达黎加</option>
+                            <option value="35">喀麦隆</option>
+                            <option value="191">土库曼斯坦</option>
+                            <option value="192">土耳其和凯科斯群岛</option>
+                            <option value="178">圣卢西亚</option>
+                            <option value="177">圣基茨和尼维斯联邦</option>
+                            <option value="160">圣多美和普林西比</option>
+                            <option value="179">圣文森特和格林纳丁斯群岛</option>
+                            <option value="159">圣马力诺</option>
+                            <option value="85">圭亚那</option>
+                            <option value="185">坦桑尼亚</option>
+                            <option value="59">埃及</option>
+                            <option value="65">埃塞俄比亚</option>
+                            <option value="184">塔吉克斯坦</option>
+                            <option value="183">塔希提岛</option>
+                            <option value="163">塞内加尔</option>
+                            <option value="209">塞尔维亚黑山</option>
+                            <option value="165">塞拉里昂</option>
+                            <option value="51">塞浦路斯</option>
+                            <option value="164">塞舌尔群岛</option>
+                            <option value="126">墨西哥</option>
+                            <option value="187">多哥</option>
+                            <option value="57">多米尼加共和国</option>
+                            <option value="56">多米尼加群岛</option>
+                            <option value="14">奥地利</option>
+                            <option value="203">委内瑞拉</option>
+                            <option value="18">孟加拉国</option>
+                            <option value="8">安哥拉</option>
+                            <option value="7">安圭拉岛</option>
+                            <option value="9">安提瓜及巴布达岛</option>
+                            <option value="6">安道尔</option>
+                            <option value="139">尼加拉瓜</option>
+                            <option value="141">尼日利亚</option>
+                            <option value="140">尼日尔</option>
+                            <option value="134">尼泊尔</option>
+                            <option value="146">巴勒斯坦</option>
+                            <option value="16">巴哈马群岛</option>
+                            <option value="145">巴基斯坦</option>
+                            <option value="19">巴巴多斯</option>
+                            <option value="148">巴布亚新几内亚</option>
+                            <option value="149">巴拉圭</option>
+                            <option value="147">巴拿马</option>
+                            <option value="17">巴林</option>
+                            <option value="28">巴西</option>
+                            <option value="32">布基纳法索</option>
+                            <option value="33">布隆迪</option>
+                            <option value="78">希腊</option>
+                            <option value="46">库克群岛</option>
+                            <option value="38">开曼群岛</option>
+                            <option value="75">德国</option>
+                            <option value="97">意大利</option>
+                            <option value="168">所罗门群岛</option>
+                            <option value="108">拉托维亚</option>
+                            <option value="143">挪威</option>
+                            <option value="52">捷克共和国</option>
+                            <option value="127">摩尔多瓦</option>
+                            <option value="130">摩洛哥</option>
+                            <option value="30">文莱塔鲁萨拉姆</option>
+                            <option value="67">斐济</option>
+                            <option value="173">斯威士兰</option>
+                            <option value="172">斯洛伐克</option>
+                            <option value="167">斯洛文尼亚</option>
+                            <option value="176">斯里兰卡</option>
+                            <option value="166">新加坡</option>
+                            <option value="137">新喀里多尼亚</option>
+                            <option value="138">新西兰</option>
+                            <option value="99">日本</option>
+                            <option value="41">智利</option>
+                            <option value="34">柬埔寨</option>
+                            <option value="79">格林纳达</option>
+                            <option value="218">格陵兰</option>
+                            <option value="74">格鲁吉亚</option>
+                            <option value="22">比利时</option>
+                            <option value="124">毛里塔尼亚</option>
+                            <option value="125">毛里求斯</option>
+                            <option value="188">汤加群岛</option>
+                            <option value="161">沙特阿拉伯</option>
+                            <option value="70">法国</option>
+                            <option value="69">法属圭亚那</option>
+                            <option value="66">法罗群岛</option>
+                            <option value="152">波兰队</option>
+                            <option value="154">波多黎哥</option>
+                            <option value="26">波斯尼亚-黑塞哥维那</option>
+                            <option value="186">泰国</option>
+                            <option value="210">津巴布韦</option>
+                            <option value="87">洪都拉斯</option>
+                            <option value="86">海地</option>
+                            <option value="13">澳大利亚</option>
+                            <option value="116">澳门</option>
+                            <option value="95">爱尔兰</option>
+                            <option value="64">爱沙尼亚</option>
+                            <option value="98">牙买加</option>
+                            <option value="193">特立尼达和多巴哥</option>
+                            <option value="25">玻利维亚</option>
+                            <option value="181">瑞典</option>
+                            <option value="174">瑞士</option>
+                            <option value="81">瓜德罗普岛</option>
+                            <option value="202">瓦努阿图</option>
+                            <option value="20">白俄罗斯</option>
+                            <option value="24">百慕大群岛</option>
+                            <option value="77">直布罗陀</option>
+                            <option value="105">科威特</option>
+                            <option value="48">科特迪瓦</option>
+                            <option value="150">秘鲁</option>
+                            <option value="189">突尼斯</option>
+                            <option value="114">立陶宛</option>
+                            <option value="170">索马里</option>
+                            <option value="100">约旦</option>
+                            <option value="133">纳米比亚</option>
+                            <option value="132">缅甸</option>
+                            <option value="156">罗马尼亚</option>
+                            <option value="200">美属维尔京群岛</option>
+                            <option value="5">美属萨摩亚群岛</option>
+                            <option value="107">老挝</option>
+                            <option value="102">肯尼亚</option>
+                            <option value="68">芬兰</option>
+                            <option value="180">苏里南</option>
+                            <option value="197">英国</option>
+                            <option value="29">英属维尔京群岛</option>
+                            <option value="136">荷兰安的列斯群岛</option>
+                            <option value="131">莫桑比克</option>
+                            <option value="110">莱索托</option>
+                            <option value="151">菲律宾</option>
+                            <option value="60">萨尔瓦多</option>
+                            <option value="153">葡萄牙</option>
+                            <option value="128">蒙古</option>
+                            <option value="129">蒙特塞拉特岛</option>
+                            <option value="171">西班牙</option>
+                            <option value="206">西萨摩亚群岛</option>
+                            <option value="23">贝宁</option>
+                            <option value="207">赞比亚</option>
+                            <option value="62">赤道几内亚</option>
+                            <option value="204">越南</option>
+                            <option value="15">阿塞拜疆</option>
+                            <option value="2">阿富汗</option>
+                            <option value="4">阿尔及利亚</option>
+                            <option value="3">阿尔巴尼亚</option>
+                            <option value="144">阿曼</option>
+                            <option value="10">阿根廷</option>
+                            <option value="196">阿联酋</option>
+                            <option value="12">阿鲁巴岛</option>
+                            <option value="214">马其顿</option>
+                            <option value="122">马尔代夫</option>
+                            <option value="118">马拉维</option>
+                            <option value="123">马提尼克岛</option>
+                            <option value="121">马来西亚</option>
+                            <option value="120">马耳他</option>
+                            <option value="117">马达加斯加</option>
+                            <option value="119">马里</option>
+                            <option value="109">黎巴嫩</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">所在地区 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="province2" style="width: 77px" placeholder="省">
+                        <input type="text" name="province1" style="width: 76px;" placeholder="市">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">邮政编号 :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="postcode">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">住址 :</div>
+                    <div class="form-control"> <span class="non-edit-item"> <span></span> <br>
+                      </span> <span class="edit-control">
+                      <input type="text" name="address">
+                      </span> </div>
+                  </li>
+                  <li>
+                    <div class="form-label">QQ :</div>
+                    <div class="form-control">
+                      <div class="non-edit-item"> <span></span> <br>
+                      </div>
+                      <div class="edit-control">
+                        <input type="text" name="qq">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-label">微信号 :</div>
+                    <div class="form-control"> <span class="non-edit-item"> <span></span> <br>
+                      </span> <span class="edit-control">
+                      <input type="text" name="wechat">
+                      </span> </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-center">
+                <button type="button" class="button red">更改资料</button>
+              </div>
+            </form>
           </div>
         </div>
         <profile-setting />
       </section>
     </section>
+    <profile-modal-name ref="profileModalName" />
+    <profile-modal-ic ref="profileModalIc" />
+    <profile-modal-email ref="profileModalEmail" />
+    <profile-modal-phone ref="profileModalPhone" />
   </article>
 </template>
 
@@ -58,16 +766,50 @@
 import CompMembersLeftMenu from '../CompMembersLeftMenu'
 import ProfileNav from './ProfileNav'
 import ProfileSetting from './ProfileSetting'
+import ProfileModalName from './ProfileModal/ProfileModalName'
+import ProfileModalIc from './ProfileModal/ProfileModalIc'
+import ProfileModalEmail from './ProfileModal/ProfileModalEmail'
+import ProfileModalPhone from './ProfileModal/ProfileModalPhone'
 
 export default {
   name: 'profile',
   components: {
     CompMembersLeftMenu,
     ProfileNav,
-    ProfileSetting
+    ProfileSetting,
+    ProfileModalName,
+    ProfileModalIc,
+    ProfileModalEmail,
+    ProfileModalPhone
   },
   data () {
     return {
+    }
+  },
+  methods: {
+    showModalName () {
+      this.$refs.profileModalName.actShowModal()
+    },
+    hideModalName () {
+      this.$refs.profileModalName.actHideModal()
+    },
+    showModalIc () {
+      this.$refs.profileModalIc.actShowModal()
+    },
+    hideModalIc () {
+      this.$refs.profileModalIc.actHideModal()
+    },
+    showModalEmail () {
+      this.$refs.profileModalEmail.actShowModal()
+    },
+    hideModalEmail () {
+      this.$refs.profileModalEmail.actHideModal()
+    },
+    showModalPhone () {
+      this.$refs.profileModalPhone.actShowModal()
+    },
+    hideModalPhone () {
+      this.$refs.profileModalPhone.actHideModal()
     }
   }
 }
