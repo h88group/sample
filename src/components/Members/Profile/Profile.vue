@@ -6,7 +6,7 @@
       <section class="member-profile-container">
         <div class="tab-content">
           <div id="member-profile" class="tab-pane active" role="tabpanel">
-            <form class="account-password text-center" style="min-height: 300px;">
+            <form class="account-password text-center">
               <p class="form-error-text text-center">必须填写安全密码</p>
               <div>
                 <div style="margin:30px 0;">请输入「安全密码」查看「个人资料」。</div>

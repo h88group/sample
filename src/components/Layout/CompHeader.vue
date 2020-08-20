@@ -53,7 +53,7 @@
               </router-link>
             </span>
             <span class="item stick hide--condensed">
-              <router-link :to="{ name: 'Withdrawal' }">
+              <router-link :to="{ name: 'CashierWithdrawal' }">
                 <i class="icon icon--svg icon--wallet">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -13,6 +13,14 @@ import Profile from '@/components/Members/Profile/Profile'
 import ProfilePassword from '@/components/Members/Profile/ProfilePassword'
 import ProfileChangepin from '@/components/Members/Profile/ProfileChangepin'
 import ProfilePin from '@/components/Members/Profile/ProfilePin'
+import Cashier from '@/components/Members/Cashier/Cashier'
+import CashierWithdrawal from '@/components/Members/Cashier/CashierWithdrawal'
+import CashierLogs from '@/components/Members/Cashier/CashierLogs'
+import Bonus from '@/components/Members/Bonus/Bonus'
+import BonusLogs from '@/components/Members/Bonus/BonusLogs'
+import Message from '@/components/Members/Message/Message'
+import News from '@/components/Members/Message/News'
+import MessageAdmin from '@/components/Members/Message/MessageAdmin'
 
 Vue.use(Router)
 
@@ -83,6 +91,46 @@ var router = new Router({
       path: '/members/profile/pin.html',
       name: 'ProfilePin',
       component: ProfilePin
+    },
+    {
+      path: '/members/cashier.html',
+      name: 'Cashier',
+      component: Cashier
+    },
+    {
+      path: '/members/cashier/withdrawal.html',
+      name: 'CashierWithdrawal',
+      component: CashierWithdrawal
+    },
+    {
+      path: '/members/cashier/logs.html',
+      name: 'CashierLogs',
+      component: CashierLogs
+    },
+    {
+      path: '/members/bonus.html',
+      name: 'Bonus',
+      component: Bonus
+    },
+    {
+      path: '/members/bonus/logs.html',
+      name: 'BonusLogs',
+      component: BonusLogs
+    },
+    {
+      path: '/members/message.html',
+      name: 'Message',
+      component: Message
+    },
+    {
+      path: '/members/news.html',
+      name: 'News',
+      component: News
+    },
+    {
+      path: '/members/message/admin.html',
+      name: 'MessageAdmin',
+      component: MessageAdmin
     }
   ],
   scrollBehavior (to, from, savedPosition) {
