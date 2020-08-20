@@ -4476,3 +4476,108 @@ display:none
     background-color: #0096ff;
     padding: 4px 9px
 }
+/* =========== new =======*/
+.secure-pin-wrapper {
+    width: 550px;
+    overflow-x: hidden
+}
+.secure-pin__tab-nav {
+    display: flex;
+    list-style: none;
+}
+.secure-pin__tab-nav li {
+    flex: 1;
+    text-align: center
+}
+.secure-pin__tab-nav li:first-child {
+    text-align: left
+}
+.secure-pin__tab-nav li:last-child {
+    text-align: right
+}
+.secure-pin__tab-nav a {
+    display: block;
+    height: 40px;
+    font-size: 13px;
+    color: #505050;
+    line-height: 40px;
+    border-bottom: 3px solid #d5d5d5;
+    user-select: none;
+    cursor: default
+}
+.secure-pin__tab-nav a.done {
+    border-bottom-color: #fd3153
+}
+.secure-pin__tab-nav a.done .step-box {
+    background-color: #fd3153
+}
+.secure-pin__tab-nav .step-box {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-style: normal;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px 5px 0;
+    background-color: #d0d0d0;
+    vertical-align: middle
+}
+.secure-pin__tab-nav .step-box.tick::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../images/member-ui.svg") -280px -5px no-repeat
+}
+.secure-pin__tab-content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 2200px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in
+}
+.secure-pin__tab-content>section {
+    width: 550px
+}
+.secure-pin__tab-content form {
+    color: grey
+}
+.secure-pin__tab-content .form-label {
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+    line-height: 24px
+}
+.secure-pin__tab-content .form-radio {
+    margin-right: 10px
+}
+.secure-pin__tab-content input[type=text], .secure-pin__tab-content select {
+    width: 186px;
+    height: 24px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    padding: 0 5px;
+    vertical-align: middle
+}
+.secure-pin__tab-content input[type=text].short-input {
+    width: 48px
+}
+.secure-pin__tab-content .inline-label {
+    display: inline-block;
+    width: 14px;
+    text-align: center
+}
+.secure-pin__tab-content .icon-calendar {
+    background-position: -107px -59px
+}
+.secure-pin-step1 .form-label {
+    width: 125px
+}
+
+
+
