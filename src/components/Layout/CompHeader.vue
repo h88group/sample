@@ -24,7 +24,7 @@
                 <input type="text" name="username" placeholder="账号" />
                 <span class="form-toggle-password-wrapper">
                   <input class="input--password" type="password" name="password" placeholder="密码" />
-                  <a class="btn-toggle-password" role="button">
+                  <a @click="togglePassword()" class="btn-toggle-password" role="button">
                     <i class="icon icon--toggle-password"></i>
                   </a>
                 </span>
@@ -914,7 +914,9 @@ import CompModal from '../Modal/CompModal'
 export default {
   name: 'comp-header',
   data () {
-    return {}
+    return {
+      passType: 'text'
+    }
   },
   components: {
     CompModal
@@ -944,6 +946,9 @@ export default {
     },
     mouseover: function () {
       document.body.classList.add('is-showing-mini-cashier')
+    },
+    togglePassword: function () {
+      this.passType = 'text'
     }
   },
   created () {

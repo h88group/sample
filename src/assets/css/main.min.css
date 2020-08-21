@@ -4902,7 +4902,7 @@ background-color:transparent
     display: block;
     width: 10px;
     height: 50px;
-    background: url(https://media.wvwuwvuwvw.com/e8fe/images/member/member-ui.svg) -485px 1px no-repeat
+    background: url("../images/member-ui.svg") -485px 1px no-repeat
 }
 .inbox-message-list .content {
     -webkit-flex: 1;
@@ -4968,7 +4968,7 @@ background-color:transparent
     display: inline-block;
     width: 165px;
     height: 97px;
-    background: url(https://media.wvwuwvuwvw.com/e8fe/images/member/member-ui.svg) -30px -150px no-repeat
+    background: url("../images/member-ui.svg") -30px -150px no-repeat
 }
 .inbox-reading-pane__body.has-url::after {
     display: none
@@ -4980,9 +4980,494 @@ background-color:transparent
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }
+.cashier-info-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    display: none;
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    color: #0e90fe;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 0 0 0 25px;
+    border: 1px solid #d4d4d4;
+    border-top: 0;
+    background: url("../images/member-ui.svg") #fff -229px -114px no-repeat;
+    cursor: pointer
+}
+.cashier-info-btn.withdrawal {
+    background-position: -329px -114px
+}
+.cashier-deposit .payment-options, .cashier-withdrawal .payment-options {
+    display: flex;
+    max-width: 885px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.cashier-deposit .payment-options li, .cashier-withdrawal .payment-options li {
+    display: block;
+    margin: 0 12px 10px 0;
+    cursor: pointer;
+}
+.cashier-deposit .payment-options li a, .cashier-withdrawal .payment-options li a{
+    position: relative;
+    display: inline-block;
+    width: 115px;
+    height: 35px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #cacaca;
+    color: grey;
+}
 
-
-
-
-
+.cashier-deposit .payment-options li a.active, .cashier-withdrawal .payment-options li a.active{
+    color: #fd3153;
+    border-color: #fd3153;
+}
+.payment-options-content{
+    display: none;
+}
+.payment-options-content.active{
+    display: block;
+}
+.cashier-account-binding {
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden
+}
+.cashier-account-binding .modal__header {
+    display: none
+}
+.cashier-account-binding .form-label {
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+    font-size: 13px;
+    line-height: 24px
+}
+.cashier-account-binding input[type=text], .cashier-account-binding select {
+    width: 186px;
+    height: 24px;
+    padding: 0 10px;
+    border: 1px solid #cacaca;
+    vertical-align: middle
+}
+.cashier-account-binding select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+.cashier-account-binding select::-ms-expand {
+display:none
+}
+.cashier-account-binding textarea {
+    width: 470px;
+    height: 85px;
+    padding: 5px 10px;
+    border: 1px solid #cacaca;
+    border-radius: 3px
+}
+.cashier-account-binding .required {
+    color: #fd3153
+}
+.cashier-account-binding .note {
+    color: #fd3153
+}
+.cashier-account-binding input.secure-pin {
+    width: 40px;
+    text-align: center;
+    margin-right: 5px
+}
+.cashier-account-binding input.binding-branch {
+    width: 80px;
+    text-align: center;
+    margin-right: 8px
+}
+.cashier-account-binding .button {
+    display: inline-block;
+    width: 70px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border: 2px solid #fa3b59
+}
+.cashier-account-binding .button:last-child {
+    margin-left: 24px
+}
+.cashier-account-binding .button.red {
+    background: linear-gradient(to bottom, #ff3b59 0, #ce3f57 100%)
+}
+.cashier-account-binding .close-modal {
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    background-position: -150px -60px;
+    z-index: 1
+}
+.cashier-account-binding .title {
+    position: relative;
+    height: 20px;
+    font-size: 14px;
+    color: #505050;
+    line-height: 20px;
+    margin: 20px 0 10px
+}
+.cashier-account-binding .title .title__label {
+    position: relative;
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding-right: 5px
+}
+.cashier-account-binding .title .title__bar {
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e2e2e2
+}
+.cashier-account-binding .title .title__bar::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff
+}
+.cashier-account-binding .binding-stat {
+    position: absolute;
+    top: 34px;
+    right: 34px
+}
+.cashier-account-binding .binding-full {
+    color: grey;
+    text-align: center;
+    margin-top: 20px
+}
+.cashier-account-binding .modal__footer {
+    text-align: center;
+    margin-top: 20px
+}
+.cashier-account-binding-container {
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in
+}
+.cashier-account-binding-wrapper {
+    display: flex;
+    width: 200%;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+.cashier-account-binding-wrapper .section {
+    position: relative;
+    width: 100%;
+    min-height: 421px;
+    padding: 0 35px 30px;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1
+}
+.cashier-withdrawal {
+    background: url("../images/member/cashier-withdrawal2.png") right 120px bottom 50px no-repeat;
+    background-size: 303px 225px;
+    min-height: 580px;
+    margin-bottom: 25px;
+}
+.text-right {
+    text-align: right;
+}
+.member-account-wrapper .tab-content.cashier-history-wrapper{
+    width: 934px;
+}
+.cashier-history-wrapper .refresh-button {
+    width: 60px;
+    height: 32px;
+    color: grey;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: #fff;
+    cursor: pointer
+}
+.cashier-history-wrapper .refresh-button:hover .icon-refresh {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: -webkit-transform 250ms linear;
+    transition: transform 250ms linear;
+    transition: transform 250ms linear, -webkit-transform 250ms linear
+}
+.cashier-history-wrapper .refresh-button .icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-top: -3px
+}
+.cashier-history-wrapper .refresh-button .icon-refresh {
+    background: url("../images/member-ui.svg") -400px -5px no-repeat
+}
+.cashier-history-filter {
+    margin-bottom: 15px
+}
+.cashier-history-filter ul {
+    display: inline;
+    margin-bottom: 0
+}
+.cashier-history-filter ul:first-child {
+    margin-right: 62px
+}
+.cashier-history-filter li {
+    display: inline-block;
+    margin-left: 12px
+}
+.cashier-history-filter a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid grey
+}
+.cashier-history-filter a:hover {
+    border-bottom-style: dashed
+}
+.cashier-history-filter .label {
+    margin: 0
+}
+.cashier-history-filter .active a {
+    color: #fd3153;
+    border-bottom-color: #fd3153
+}
+.cashier-history-filter .icon {
+    width: 12px;
+    height: 8px;
+    margin-right: 3px;
+    vertical-align: middle;
+    background: url("../images/member-ui.svg") 0 0 no-repeat
+}
+.cashier-history-filter .icon.icon-success {
+    background-position: -5px -110px
+}
+.cashier-history-filter .icon.icon-fail {
+    background-position: -20px -110px
+}
+.cashier-history-filter .icon.icon-transfer {
+    background-position: -35px -110px
+}
+.cashier-history-filter .icon.icon-pending {
+    background-position: -50px -110px
+}
+.cashier-account-binding-table, .cashier-history-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse
+}
+.cashier-account-binding-table thead>tr, .cashier-history-table thead>tr {
+    border-color: #fd3153
+}
+.cashier-account-binding-table th, .cashier-history-table th {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 28px;
+    border-left: 1px solid #f9f9f9;
+    padding: 0 5px;
+    background-color: #fd3153
+}
+.cashier-account-binding-table th:first-child, .cashier-history-table th:first-child {
+    border-left: 0 none
+}
+.cashier-account-binding-table tr, .cashier-history-table tr {
+    border: 1px solid #d4d4d4
+}
+.cashier-account-binding-table td, .cashier-history-table td {
+    line-height: 29px;
+    border-left: 1px solid #d4d4d4;
+    padding: 0 5px;
+    background-color: #fff
+}
+.cashier-account-binding-table td:first-child, .cashier-history-table td:first-child {
+    border-left: none
+}
+.cashier-today-history {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 950px
+}
+.cashier-today-history .today-history-item {
+    position: relative;
+    width: 20%;
+    height: 64px;
+    border-right: 1px solid #e3e3e3
+}
+.cashier-today-history .today-history-item:nth-child(5n+0) {
+    border-right: 0
+}
+.cashier-today-history .today-history-item:nth-child(-n+5) {
+    border-bottom: 1px solid #e3e3e3
+}
+.cashier-today-history .icon {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/member-ui.svg") -6px -6px no-repeat
+}
+.cashier-today-history .icon.icon-transfer:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/member-ui.svg") -70px -115px no-repeat
+}
+.cashier-today-history .icon.icon-success {
+    background-position: -93px -6px
+}
+.cashier-today-history .icon.icon-success:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/member-ui.svg") -150px -115px no-repeat
+}
+.cashier-today-history .icon.icon-fail {
+    background-position: -49px -6px
+}
+.cashier-today-history .icon.icon-fail:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/member-ui.svg") -110px -115px no-repeat
+}
+.cashier-today-history .icon.icon-pending {
+    background-position: -139px -6px
+}
+.cashier-today-history .icon.icon-pending:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/member-ui.svg") -190px -115px no-repeat
+}
+.cashier-today-history .today-history-item__inner {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px
+}
+.cashier-today-history .today-history-item__inner .column {
+    float: none;
+    margin-left: 10px
+}
+.cashier-today-history .today-history-item__inner .amount, .cashier-today-history .today-history-item__inner .datetime, .cashier-today-history .today-history-item__inner .title {
+    display: block
+}
+.cashier-today-history .today-history-item__inner .datetime {
+    font-size: 11px
+}
+.cashier-today-history .today-history-item__inner .amount {
+    text-align: left;
+    font-size: 13px;
+    color: #008aff;
+    padding-left: 30px;
+    padding-right: 0
+}
+.cashier-today-history .today-history-item__inner .amount:before {
+    font-size: 11px;
+    left: 0
+}
+.cashier-today-history .today-history-item__inner.empty {
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: inherit;
+    text-align: center
+}
+.news-header {
+    display: flex;
+    margin-bottom: 34px;
+    background: #f1f1f1;
+    list-style: none;
+    width: 100%;
+}
+.news-header li{
+    width: 20%;
+}
+.news-header li a {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 9px;
+    position: relative;
+    transition: all .3s linear;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    color: grey;
+}
+.news-header li a.active {
+    color: #fff;
+    background: #fd3153;
+}
+.news-header .header__active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fd3153;
+    transition: left .5s ease;
+    z-index: -1
+}
+.news-wrapper .news-list {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    margin-bottom: 0
+}
+.news-wrapper .news-list li {
+    display: table-row
+}
+.news-wrapper .news-list .date {
+    min-width: 118px
+}
+.news-wrapper .news-list .date, .news-wrapper .news-list .news-item {
+    display: table-cell;
+    background: #fff;
+    color: #3c3c3c;
+    padding: 13px 20px;
+    border: 1px solid #eaeaea;
+    vertical-align: middle
+}
+.news-content{
+    display: none;
+}
+.news-content.active{
+    display: block;
+}
 
