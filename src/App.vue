@@ -14,6 +14,7 @@ import CompHeader from './components/Layout/CompHeader'
 import CompFooter from './components/Layout/CompFooter'
 import CompSitemap from './components/Layout/CompSitemap'
 import CompModal from './components/Modal/CompModal'
+import $ from 'jquery'
 
 export default {
   name: 'App',
@@ -22,6 +23,15 @@ export default {
     CompFooter,
     CompSitemap,
     CompModal
+  },
+  mounted: function () {
+    $(document).click(function (event) {
+      var $target = $(event.target)
+      if (!$target.closest('#mini-cashier').length &&
+        !$target.closest('.mini-cashier-button').length) {
+        $('body').removeClass('is-showing-mini-cashier')
+      }
+    })
   }
 }
 </script>
