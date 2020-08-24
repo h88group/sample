@@ -898,7 +898,7 @@
               <a class="providers-title" href="#">棋牌</a>
             </li>
             <li>
-              <a href="#">福利专区</a>
+              <router-link :to="{ name: 'Promotions' }">福利专区</router-link>
             </li>
           </ul>
         </section>

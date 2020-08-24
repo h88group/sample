@@ -5442,7 +5442,7 @@ display:none
     height: 100%;
     background: #fd3153;
     transition: left .5s ease;
-    z-index: -1
+    z-index: -1;
 }
 .news-wrapper .news-list {
     width: 100%;
@@ -5470,4 +5470,372 @@ display:none
 .news-content.active{
     display: block;
 }
+/* ============= Promotions =========*/
+.famulei__banner {
+    display: inline-block;
+    width: 1168px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px 0 20px 10px;
+    overflow: hidden;
+    box-shadow: 0 0 3px 0 #555;
+}
+.famulei__banner:hover {
+    -webkit-box-shadow: 0 0 10px 0 #555;
+    box-shadow: 0 0 10px 0 #555;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+.promotion-nav {
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 30px;
+    list-style: none;
+}
+.promotion-nav .promotion-nav-menu label {
+    font-size: 15px;
+    color: #555;
+    border-radius: 5px;
+    padding: 5px 20px
+}
+.promotion-nav .promotion-nav-menu label:hover {
+    background-color: #e4e4e4
+}
+.promotion-nav .promotion-nav-menu label.active {
+    color: #fff;
+    background-color: #ff3c5b;
+    pointer-events: none
+}
+.promotion-nav li a {
+    font-size: 15px;
+    color: #555;
+    border-radius: 5px;
+    padding: 5px 20px
+}
+.promotion-nav li a:hover {
+    background-color: #e4e4e4
+}
+.promotion-nav li a.active {
+    color: #fff;
+    background-color: #eb0a35;
+    pointer-events: none
+}
 
+.promotions-wrapper {
+    display: table-cell;
+    width: 770px;
+    vertical-align: top;
+    padding-top: 35px
+}
+.promotion, .promotion-general-terms-wrapper {
+    position: relative;
+    line-height: 1.6;
+    border: 1px solid #c2c2c2;
+    margin-bottom: 50px;
+    padding: 16px 26px;
+    background-color: #f9f9f9
+}
+.promotion .promotion__avatar, .promotion-general-terms-wrapper .promotion__avatar {
+    outline: 1px solid #fff;
+    box-shadow: 1px 1px 1px 0 #dbdbdb;
+    cursor: pointer
+}
+.promotion figcaption, .promotion-general-terms-wrapper figcaption {
+    font-size: 15px;
+    color: #858585;
+    margin-top: 14px;
+    line-height: 21px
+}
+.promotion figcaption .timestamp, .promotion-general-terms-wrapper figcaption .timestamp {
+    font-size: 13px;
+    float: right
+}
+.promotion .promotion-details, .promotion-general-terms-wrapper .promotion-details {
+    height: 0;
+    color: #555;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .3s linear
+}
+.promotion .promotion-details h3, .promotion-general-terms-wrapper .promotion-details h3 {
+    font-size: 13px;
+    color: #fd3153;
+    margin-top: 0
+}
+.promotion .highlight, .promotion-general-terms-wrapper .highlight {
+    color: #fd3153
+}
+.promotion-general-terms-wrapper.expanded .promotion-details, .promotion.expanded .promotion-details {
+    height: auto;
+    opacity: 1;
+    margin-top: 20px
+}
+.promotion-general-terms-wrapper.expanded .tail::after, .promotion.expanded .tail::after {
+    content: "收缩"
+}
+.promotion .promotion-terms h3, .promotion-general-terms-wrapper .promotion-terms h3 {
+    font-size: 14px;
+    color: #f52c4c;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #f52c4c;
+    cursor: pointer
+}
+.promotion .promotion-terms ul, .promotion-general-terms-wrapper .promotion-terms ul {
+    padding-left: 30px
+}
+.promotion .promotion-terms .terms-details, .promotion-general-terms-wrapper .promotion-terms .terms-details {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear
+}
+.promotion .promotion-terms .icon, .promotion-general-terms-wrapper .promotion-terms .icon {
+    width: 16px;
+    height: 16px;
+    margin-top: -3px
+}
+.promotion .promotion-terms .icon-expand, .promotion-general-terms-wrapper .promotion-terms .icon-expand {
+    background-position: -5px -260px;
+    transition: all .3s ease-out
+}
+.promotion .promotion-terms.expanded .terms-details, .promotion-general-terms-wrapper .promotion-terms.expanded .terms-details {
+    height: auto;
+    opacity: 1
+}
+.promotion .promotion-terms.expanded .icon-expand, .promotion-general-terms-wrapper .promotion-terms.expanded .icon-expand {
+    background-position: -25px -260px
+}
+.promotion .tail, .promotion-general-terms-wrapper .tail {
+    position: absolute;
+    right: -1px;
+    bottom: -26px;
+    border-right: 1px solid #c2c2c2;
+    background: url(https://media.wvwuwvuwvw.com/e8fe/images/promotions/expand-btn.png?v=1) 0 0 no-repeat;
+    cursor: pointer
+}
+.promotion .tail::after, .promotion-general-terms-wrapper .tail::after {
+    display: table-cell;
+    content: "展开";
+    width: 117px;
+    height: 26px;
+    color: #414141;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 21px;
+    text-shadow: 1px 1px #fff
+}
+.promotion .tail:hover, .promotion-general-terms-wrapper .tail:hover {
+    background-position: -117px 0
+}
+@-webkit-keyframes push-flash {
+to {
+background-position:-66px 0
+}
+}
+@keyframes push-flash {
+to {
+background-position:-66px 0
+}
+}
+.promotion.is-new::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    width: 60px;
+    height: 32px;
+    background: url(https://media.wvwuwvuwvw.com/e8fe/images/promotions/new-big.png) 0 0 no-repeat;
+    background-size: 60px 32px
+}
+.promotion .tail--registration {
+    position: absolute;
+    right: 89px;
+    bottom: -26px;
+    width: 124px;
+    height: 26px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    padding-left: 13px;
+    background: url(https://media.wvwuwvuwvw.com/e8fe/images/promotions/registration-btn.png?v=1) 0 0 no-repeat
+}
+.promotion .tail--registration:hover {
+    text-decoration: none;
+    background-position: -124px 0
+}
+.promotion .push-flash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -38px;
+    width: 33px;
+    height: 18px;
+    background: url(/images/promotions/push-flash.svg) 0 0 no-repeat;
+    -webkit-animation: push-flash 1s steps(2) infinite;
+    animation: push-flash 1s steps(2) infinite
+}
+.promotion-detail-wrapper.is-visible .promotion.is-expired::before {
+    content: '';
+    position: absolute;
+    top: -17px;
+    left: -26px;
+    width: 958px;
+    height: 897px;
+    border-radius: 10px;
+    background: url(/images/promotions/expired.svg) rgba(0,0,0,.6) center no-repeat;
+    background-size: 100% auto;
+    z-index: 1
+}
+.promotion-general-terms-wrapper .heading-wrapper {
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+    margin: 0 0 30px
+}
+.promotion-general-terms-wrapper .terms-heading {
+    position: relative
+}
+.promotion-general-terms-wrapper .terms-heading:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -48px;
+    display: block;
+    width: 41px;
+    border-bottom: 1px solid #e3e3e3;
+    box-shadow: 0 1px 0 1px #fff
+}
+.promotion-general-terms-wrapper .terms-heading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -48px;
+    display: block;
+    width: 41px;
+    border-bottom: 1px solid #e3e3e3;
+    box-shadow: 0 1px 0 1px #fff
+}
+.promotion-general-terms-wrapper .promotion-details dt {
+    margin-bottom: 10px
+}
+.promotion-general-terms-wrapper .promotion-details ul {
+    padding-left: 30px
+}
+.promotion-general-terms-wrapper .promotion-details ul ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 10px
+}
+.promotion-general-terms-wrapper .promotion-details ul ul li {
+    position: relative;
+    padding-left: 8px
+}
+.promotion-general-terms-wrapper .promotion-details ul ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0
+}
+.promotion-general-terms-wrapper .promotion-details li {
+    margin-bottom: 12px
+}
+.bg-promotions {
+    height: 222px;
+    background-image: url(https://media.wvwuwvuwvw.com/e8fe/images/promotions/bg-promotions.png);
+    background-position: 50% 50%;
+    background-size: 1920px 222px
+}
+.promotion-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px
+}
+.promotion-table .table__header, .promotion-table th {
+    color: #fffeff;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #f52c4c
+}
+.promotion-table td {
+    color: #5f5a5d;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+    border: 1px solid #fff;
+    background-color: #e0e0e0
+}
+.promotion-table td ol, .promotion-table td ul {
+    margin-bottom: 0
+}
+.limited-time-flash {
+    position: relative
+}
+.limited-time-flash::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -23px;
+    width: 24px;
+    height: 18px;
+    background: url(https://media.wvwuwvuwvw.com/e8fe/images/promotions/limited-time-flash.png) 0 0 no-repeat;
+    -webkit-animation: limited-time-flash 1s steps(2) infinite;
+    animation: limited-time-flash 1s steps(2) infinite
+}
+@-webkit-keyframes limited-time-flash {
+to {
+background-position:-48px 0
+}
+}
+@keyframes limited-time-flash {
+to {
+background-position:-48px 0
+}
+}
+.ppromotion {
+    width: 376px;
+    margin: 15px 10px 25px 10px;
+    float: left;
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    color: #555;
+    box-shadow: 0px 0px 3px 0px #555;
+    overflow: hidden;
+}
+.ppromotion:hover {
+    -webkit-box-shadow: 0 0 10px 0 #555;
+    box-shadow: 0 0 10px 0 #555;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+.promotion__img{
+    width: 100%;
+}
+.promotion__inner {
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    height: 110px;
+}
+.promotion__title {
+    font-size: 17px;
+    font-weight: bold;
+}
+.ppromotion:hover .promotion__title {
+    color: #eb0a35;
+}
+.promotion__details {
+    width: 100%;
+    height: 34px;
+    border: 0;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    background: #fff;
+}
+.ppromotion .promotion__details {
+    background: #eb0a35;
+}

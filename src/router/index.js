@@ -21,6 +21,7 @@ import BonusLogs from '@/components/Members/Bonus/BonusLogs'
 import Message from '@/components/Members/Message/Message'
 import News from '@/components/Members/Message/News'
 import MessageAdmin from '@/components/Members/Message/MessageAdmin'
+import Promotions from '@/components/Promotions/Promotions'
 
 Vue.use(Router)
 
@@ -131,6 +132,11 @@ var router = new Router({
       path: '/members/message/admin.html',
       name: 'MessageAdmin',
       component: MessageAdmin
+    },
+    {
+      path: '/promotions.html',
+      name: 'Promotions',
+      component: Promotions
     }
   ],
   scrollBehavior (to, from, savedPosition) {

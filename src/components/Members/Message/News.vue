@@ -84,7 +84,7 @@ export default {
       activeItemStep: 'news_all'
     }
   },
-  methods: {    
+  methods: {
     isActiveStep (menuItemStep) {
       return this.activeItemStep === menuItemStep
     },
