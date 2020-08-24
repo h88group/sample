@@ -11,7 +11,7 @@
           <p><a class="famulei__banner" href="#"> <img src="../../assets/images/promotions/famulei.jpg" width="1168" height="150" alt="伐木累"> </a></p>
           <div id="promotion-nav1" class="payment-options-content" :class="{ 'active': isActiveStep('promotion-nav1') }">
             <div class="promotionalist clearfix">
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -19,7 +19,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -27,7 +27,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -35,7 +35,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -43,7 +43,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -51,7 +51,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -59,7 +59,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -67,7 +67,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -79,7 +79,7 @@
           </div>
           <div id="promotion-nav2" class="payment-options-content" :class="{ 'active': isActiveStep('promotion-nav2') }">
             <div class="promotionalist clearfix">
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -87,7 +87,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -95,7 +95,7 @@
                 </div>
                 <button class="promotion__details" type="button">查看更多</button>
               </div>
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
@@ -107,7 +107,7 @@
           </div>
           <div id="promotion-nav3" class="payment-options-content" :class="{ 'active': isActiveStep('promotion-nav3') }">
             <div class="promotionalist clearfix">
-              <div class="ppromotion">
+              <div class="ppromotion" @click="showModal()">
                 <div class="promotion__img"><img src="../../assets/images/promotions/282-web.jpg" alt="" /></div>
                 <div class="promotion__inner">
                   <h3 class="promotion__title">金牌大赢家</h3>
