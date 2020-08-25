@@ -1308,12 +1308,21 @@ background-color:transparent
     width: 240px
 }
 .main-header-menu>li .submenu .caipiao__submenu {
-    width: 1000px;
+    width: 1320px;
     background: url("../images/menu/loto/lotto-submenu.jpg") 0 0 no-repeat;
-    background-size: 1000px 120px
+    background-size: 1320px 120px
 }
 .main-header-menu>li .submenu .caipiao__submenu li {
-    width: 250px
+    width: 264px
+}
+.main-header-menu>li .submenu .boardgame__submenu {
+    width: 1000px;
+    background: url("../images/menu/board/board-submenu.jpg") 0 0 no-repeat;
+    background-size: 1000px 120px;
+    padding: 0 20px;
+}
+.main-header-menu>li .submenu .boardgame__submenu li {
+    width: 240px
 }
 .main-header-menu>li .submenu .rng__submenu {
     width: 810px;

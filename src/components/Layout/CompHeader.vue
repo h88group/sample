@@ -653,11 +653,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/loto/kg.jpg"
-                      width="250"
-                      height="120"
-                      alt="KG奇乐彩"
-                    />
+                      src="../../assets/images/menu/loto/tc.jpg" alt="彩票" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -683,11 +679,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/loto/vr.jpg"
-                      width="250"
-                      height="120"
-                      alt="VR彩票"
-                    />
+                      src="../../assets/images/menu/loto/saba1.jpg" alt="彩票" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -713,11 +705,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/loto/ig.jpg"
-                      width="250"
-                      height="120"
-                      alt="IG彩票"
-                    />
+                      src="../../assets/images/menu/loto/saba2.jpg" alt="彩票" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -743,11 +731,33 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/loto/lbkeno.jpg"
-                      width="250"
-                      height="120"
-                      alt="LB 奇乐彩"
-                    />
+                      src="../../assets/images/menu/loto/ig.jpg" alt="彩票" />
+                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
+                    <nav class="submenu__nav-group">
+                      <a href="#" target="_blank" rel="noopener">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M17.7 0H6.3C4.9 0 3.8 1.1 3.8 2.5v19c0 1.4 1.1 2.5 2.5 2.5h11.5c1.4 0 2.5-1.1 2.5-2.5v-19C20.2 1.1 19.1 0 17.7 0zm-7.5 1.9h3.7v1.3h-3.7V1.9zM12 23.3c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.9-3.6H5.1V4.1h13.8v15.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a onclick="alert(&quot;请先登入账号&quot;)">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M22.5 17.3h-8.2v2.8h1.3c.5 0 .9.4.9.9v.2H7.6V21c0-.5.4-.9.9-.9h1.2v-2.8H1.5c-.8 0-1.5-.7-1.5-1.5V4.3c0-.8.7-1.5 1.5-1.5h21c.8 0 1.5.7 1.5 1.5v11.5c0 .8-.7 1.5-1.5 1.5zm.3-12.8c0-.4-.3-.7-.6-.7H1.9c-.4 0-.6.3-.6.7v11.1c0 .4.3.7.6.7h20.3c.4 0 .6-.3.6-.7V4.5zm-1.7 10.9H2.9c-.4 0-.6-.3-.6-.7V5.2c0-.4.3-.6.6-.6h18.2c.4 0 .6.3.6.6v9.6c0 .3-.3.6-.6.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </nav>
+                  </li>
+                  <li>
+                    <img
+                      class="submenu__hover"
+                      src="../../assets/images/menu/loto/vr.jpg" alt="彩票" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -774,7 +784,115 @@
               </div>
             </li>
             <li>
-              <a class="providers-title" href="#">棋牌</a>
+              <a class="drop-down" href="#">棋牌</a>
+              <div class="submenu">
+                <ul class="submenu__inner boardgame__submenu">
+                  <li>
+                    <img
+                      class="submenu__hover"
+                      src="../../assets/images/menu/board/matrix.jpg" alt="棋牌" />
+                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
+                    <nav class="submenu__nav-group">
+                      <a href="#" target="_blank" rel="noopener">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M17.7 0H6.3C4.9 0 3.8 1.1 3.8 2.5v19c0 1.4 1.1 2.5 2.5 2.5h11.5c1.4 0 2.5-1.1 2.5-2.5v-19C20.2 1.1 19.1 0 17.7 0zm-7.5 1.9h3.7v1.3h-3.7V1.9zM12 23.3c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.9-3.6H5.1V4.1h13.8v15.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a onclick="alert(&quot;请先登入账号&quot;)">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M22.5 17.3h-8.2v2.8h1.3c.5 0 .9.4.9.9v.2H7.6V21c0-.5.4-.9.9-.9h1.2v-2.8H1.5c-.8 0-1.5-.7-1.5-1.5V4.3c0-.8.7-1.5 1.5-1.5h21c.8 0 1.5.7 1.5 1.5v11.5c0 .8-.7 1.5-1.5 1.5zm.3-12.8c0-.4-.3-.7-.6-.7H1.9c-.4 0-.6.3-.6.7v11.1c0 .4.3.7.6.7h20.3c.4 0 .6-.3.6-.7V4.5zm-1.7 10.9H2.9c-.4 0-.6-.3-.6-.7V5.2c0-.4.3-.6.6-.6h18.2c.4 0 .6.3.6.6v9.6c0 .3-.3.6-.6.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </nav>
+                  </li>
+                  <li>
+                    <img
+                      class="submenu__hover"
+                      src="../../assets/images/menu/board/ky.jpg" alt="棋牌" />
+                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
+                    <nav class="submenu__nav-group">
+                      <a href="#" target="_blank" rel="noopener">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M17.7 0H6.3C4.9 0 3.8 1.1 3.8 2.5v19c0 1.4 1.1 2.5 2.5 2.5h11.5c1.4 0 2.5-1.1 2.5-2.5v-19C20.2 1.1 19.1 0 17.7 0zm-7.5 1.9h3.7v1.3h-3.7V1.9zM12 23.3c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.9-3.6H5.1V4.1h13.8v15.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a onclick="alert(&quot;请先登入账号&quot;)">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M22.5 17.3h-8.2v2.8h1.3c.5 0 .9.4.9.9v.2H7.6V21c0-.5.4-.9.9-.9h1.2v-2.8H1.5c-.8 0-1.5-.7-1.5-1.5V4.3c0-.8.7-1.5 1.5-1.5h21c.8 0 1.5.7 1.5 1.5v11.5c0 .8-.7 1.5-1.5 1.5zm.3-12.8c0-.4-.3-.7-.6-.7H1.9c-.4 0-.6.3-.6.7v11.1c0 .4.3.7.6.7h20.3c.4 0 .6-.3.6-.7V4.5zm-1.7 10.9H2.9c-.4 0-.6-.3-.6-.7V5.2c0-.4.3-.6.6-.6h18.2c.4 0 .6.3.6.6v9.6c0 .3-.3.6-.6.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </nav>
+                  </li>
+                  <li>
+                    <img
+                      class="submenu__hover"
+                      src="../../assets/images/menu/board/le.jpg" alt="棋牌" />
+                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
+                    <nav class="submenu__nav-group">
+                      <a href="#" target="_blank" rel="noopener">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M17.7 0H6.3C4.9 0 3.8 1.1 3.8 2.5v19c0 1.4 1.1 2.5 2.5 2.5h11.5c1.4 0 2.5-1.1 2.5-2.5v-19C20.2 1.1 19.1 0 17.7 0zm-7.5 1.9h3.7v1.3h-3.7V1.9zM12 23.3c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.9-3.6H5.1V4.1h13.8v15.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a onclick="alert(&quot;请先登入账号&quot;)">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M22.5 17.3h-8.2v2.8h1.3c.5 0 .9.4.9.9v.2H7.6V21c0-.5.4-.9.9-.9h1.2v-2.8H1.5c-.8 0-1.5-.7-1.5-1.5V4.3c0-.8.7-1.5 1.5-1.5h21c.8 0 1.5.7 1.5 1.5v11.5c0 .8-.7 1.5-1.5 1.5zm.3-12.8c0-.4-.3-.7-.6-.7H1.9c-.4 0-.6.3-.6.7v11.1c0 .4.3.7.6.7h20.3c.4 0 .6-.3.6-.7V4.5zm-1.7 10.9H2.9c-.4 0-.6-.3-.6-.7V5.2c0-.4.3-.6.6-.6h18.2c.4 0 .6.3.6.6v9.6c0 .3-.3.6-.6.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </nav>
+                  </li>
+                  <li>
+                    <img
+                      class="submenu__hover"
+                      src="../../assets/images/menu/board/mt.jpg" alt="棋牌" />
+                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
+                    <nav class="submenu__nav-group">
+                      <a href="#" target="_blank" rel="noopener">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M17.7 0H6.3C4.9 0 3.8 1.1 3.8 2.5v19c0 1.4 1.1 2.5 2.5 2.5h11.5c1.4 0 2.5-1.1 2.5-2.5v-19C20.2 1.1 19.1 0 17.7 0zm-7.5 1.9h3.7v1.3h-3.7V1.9zM12 23.3c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm6.9-3.6H5.1V4.1h13.8v15.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <a onclick="alert(&quot;请先登入账号&quot;)">
+                        <span class="icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M22.5 17.3h-8.2v2.8h1.3c.5 0 .9.4.9.9v.2H7.6V21c0-.5.4-.9.9-.9h1.2v-2.8H1.5c-.8 0-1.5-.7-1.5-1.5V4.3c0-.8.7-1.5 1.5-1.5h21c.8 0 1.5.7 1.5 1.5v11.5c0 .8-.7 1.5-1.5 1.5zm.3-12.8c0-.4-.3-.7-.6-.7H1.9c-.4 0-.6.3-.6.7v11.1c0 .4.3.7.6.7h20.3c.4 0 .6-.3.6-.7V4.5zm-1.7 10.9H2.9c-.4 0-.6-.3-.6-.7V5.2c0-.4.3-.6.6-.6h18.2c.4 0 .6.3.6.6v9.6c0 .3-.3.6-.6.6z"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </nav>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <router-link :to="{ name: 'Promotions' }">福利专区</router-link>
