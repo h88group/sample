@@ -246,7 +246,7 @@
               </a>
               <div class="submenu">
                 <ul class="submenu__inner zhenren__submenu">
-                  <li class="is-new">
+                  <!-- <li class="is-new">
                     <img
                       class="submenu__hover"
                       src="../../assets/images/menu/zhenren/wm.jpg"
@@ -260,15 +260,11 @@
                         <a class="item off" onclick="alert(&quot;请先登入账号&quot;)">棋牌版</a>
                       </nav>
                     </div>
-                  </li>
+                  </li> -->
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/zhenren/eg.jpg"
-                      width="188"
-                      height="120"
-                      alt="EG"
-                    />
+                      src="../../assets/images/menu/zhenren/ag.jpg" alt="EG" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -294,11 +290,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/zhenren/ea.jpg"
-                      width="188"
-                      height="120"
-                      alt="EA"
-                    />
+                      src="../../assets/images/menu/zhenren/n2.jpg" alt="EA" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -333,11 +325,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/zhenren/n2live.jpg"
-                      width="188"
-                      height="120"
-                      alt="N2Live"
-                    />
+                      src="../../assets/images/menu/zhenren/hog.jpg" alt="N2Live" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -363,11 +351,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/zhenren/ebet.jpg"
-                      width="188"
-                      height="120"
-                      alt="EBet"
-                    />
+                      src="../../assets/images/menu/zhenren/bbin.jpg" alt="EBet" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -393,11 +377,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/zhenren/ag.jpg"
-                      width="188"
-                      height="120"
-                      alt="AG"
-                    />
+                      src="../../assets/images/menu/zhenren/allbet.jpg" alt="AG" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -432,11 +412,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/zhenren/hg.jpg"
-                      width="188"
-                      height="120"
-                      alt="HG"
-                    />
+                      src="../../assets/images/menu/zhenren/ebet.jpg" alt="HG" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">

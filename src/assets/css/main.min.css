@@ -1274,9 +1274,12 @@ background-color:transparent
 }
 .main-header-menu>li .submenu .zhenren__submenu {
     width: 1320px;
-    padding: 0 2px;
+    padding: 0 60px;
     background: url("../images/menu/zhenren/zhenren-submenu.jpg") 0 0 no-repeat;
     background-size: 1320px 120px
+}
+.main-header-menu>li .submenu .zhenren__submenu li{
+    width: 200px;
 }
 .main-header-menu>li .submenu .esport__submenu {
     width: 1320px;
