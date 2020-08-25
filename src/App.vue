@@ -34,13 +34,13 @@ export default {
     })
     $(document).ready(function () {
       $('.btn-toggle-password').click(function () {
-          var e = $(this).parent().find('input')
+        var e = $(this).parent().find('input')
           , t = 'password' === e.attr('type') ? 'text' : 'password'
         e.attr('type', t)
       })
 
       $('.js-autotab input').keyup(function () {
-        var e = $(this);
+        var e = $(this)
         e.val().length >= e.attr('maxlength') && e.next('input').focus()
       })
 
@@ -48,7 +48,7 @@ export default {
         var e, t = $(this),
           s = $(this).find('input').get(0),
           i = t.find('.secure-keypad'),
-          n = !1;
+          n = !1
         t.on('click focusin', function () {
           clearTimeout(e), n || (n = !0, i.addClass('is-visible')), setTimeout(function () {
             s.focus()
@@ -60,6 +60,9 @@ export default {
         })
       })
 
+      $('#code').keydown(function (event) {
+        return false
+      })
     })
   }
 }
