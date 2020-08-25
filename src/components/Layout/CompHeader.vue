@@ -453,11 +453,7 @@
                   <li class="is-hot">
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/sport/saba3.jpg"
-                      width="330"
-                      height="120"
-                      alt="沙巴体育"
-                    />
+                      src="../../assets/images/menu/sport/sport1.jpg" alt="沙巴体育" />
                     <a href="#" class="providers-title"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -483,11 +479,7 @@
                   <li class="is-hot">
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/sport/ysb2.jpg"
-                      width="330"
-                      height="120"
-                      alt="YSB"
-                    />
+                      src="../../assets/images/menu/sport/sport2.jpg" alt="沙巴体育" />
                     <a href="#" class="providers-title"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -513,11 +505,7 @@
                   <li class="is-hot">
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/sport/xj2.jpg"
-                      width="330"
-                      height="120"
-                      alt="小金"
-                    />
+                      src="../../assets/images/menu/sport/sport3.jpg" alt="沙巴体育" />
                     <a href="#" class="providers-title"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -543,11 +531,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/sport/im2.jpg"
-                      width="330"
-                      height="120"
-                      alt="IM"
-                    />
+                      src="../../assets/images/menu/sport/sport4.jpg" alt="沙巴体育" />
                     <a href="#" class="providers-title"></a>
                     <nav class="submenu__nav-group">
                       <a href="#" target="_blank" rel="noopener">
@@ -580,42 +564,20 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/esport/ia.jpg"
-                      width="330"
-                      height="120"
-                      alt="IA ESports"
-                    />
+                      src="../../assets/images/menu/esport/saba1.jpg" alt="ESports" />
                     <a class="providers-title" href="#" target="_blank" rel="noopener"></a>
                   </li>
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/esport/im.jpg"
-                      width="330"
-                      height="120"
-                      alt="IM ESports"
-                    />
+                      src="../../assets/images/menu/esport/saba2.jpg" alt="ESports" />
                     <a class="providers-title" href="#" target="_blank" rel="noopener"></a>
                   </li>
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/esport/sb.jpg?v=2"
-                      width="330"
-                      height="120"
-                      alt="SB ESports"
-                    />
+                      src="../../assets/images/menu/esport/matrix.jpg" alt="ESports" />
                     <a class="providers-title" href="#"></a>
-                  </li>
-                  <li>
-                    <img
-                      class="submenu__hover"
-                      src="../../assets/images/menu/esport/kg2.jpg"
-                      width="330"
-                      height="120"
-                      alt="LH ESports"
-                    />
-                    <a class="providers-title" href="#" target="_blank" rel="noopener"></a>
                   </li>
                 </ul>
               </div>
@@ -627,11 +589,7 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/slot/all-games.jpg"
-                      width="310"
-                      height="120"
-                      alt="电子游戏"
-                    />
+                      src="../../assets/images/menu/slot/all-games.jpg" alt="电子游戏" />
                     <a class="providers-title" href="#"></a>
                   </li>
                   <li class="rng__popular">
@@ -664,81 +622,26 @@
                   <li>
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/fishing/ag.jpg"
-                      width="165"
-                      height="120"
-                      alt="捕鱼王3D"
-                    />
+                      src="../../assets/images/menu/fishing/ag.jpg" alt="捕鱼" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                   </li>
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/fishing/ky.jpg"
-                      width="165"
-                      height="120"
-                      alt="红包捕鱼"
-                    />
+                      src="../../assets/images/menu/fishing/saba.jpg" alt="捕鱼" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                   </li>
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/fishing/mwg2.jpg"
-                      width="165"
-                      height="120"
-                      alt="捕鱼大满贯"
-                    />
+                      src="../../assets/images/menu/fishing/mega.jpg" alt="捕鱼" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
                   </li>
                   <li class="is-new">
                     <img
                       class="submenu__hover"
-                      src="../../assets/images/menu/fishing/pp.jpg"
-                      width="165"
-                      height="120"
-                      alt="王者捕鱼"
-                    />
+                      src="../../assets/images/menu/fishing/techplay.jpg" alt="捕鱼" />
                     <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
-                  </li>
-                  <li>
-                    <img
-                      class="submenu__hover"
-                      src="../../assets/images/menu/fishing/tpg360.jpg"
-                      width="165"
-                      height="120"
-                      alt="多彩捕鱼360"
-                    />
-                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
-                  </li>
-                  <li>
-                    <img
-                      class="submenu__hover"
-                      src="../../assets/images/menu/fishing/tpg2.jpg"
-                      width="165"
-                      height="120"
-                      alt="金多多捕鱼360"
-                    />
-                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
-                  </li>
-                  <li>
-                    <img
-                      class="submenu__hover"
-                      src="../../assets/images/menu/fishing/mwg.jpg"
-                      width="165"
-                      height="120"
-                      alt="千炮捕鱼"
-                    />
-                    <a class="providers-title" onclick="alert(&quot;请先登入账号&quot;)"></a>
-                  </li>
-                  <li>
-                    <img
-                      class="submenu__hover"
-                      src="../../assets/images/menu/fishing/tpg.jpg"
-                      width="165"
-                      height="120"
-                      alt="TPG捕鱼王"
-                    />
                   </li>
                 </ul>
               </div>

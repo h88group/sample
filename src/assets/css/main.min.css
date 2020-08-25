@@ -1284,10 +1284,11 @@ background-color:transparent
 .main-header-menu>li .submenu .esport__submenu {
     width: 1320px;
     background: url("../images/menu/esport/esport-submenu.jpg") 0 0 no-repeat;
-    background-size: 1320px 120px
+    background-size: 1320px 120px;
+    padding: 0 105px;
 }
 .main-header-menu>li .submenu .esport__submenu li {
-    width: 330px
+    width: 370px
 }
 .main-header-menu>li .submenu .sport__submenu {
     width: 1320px;
@@ -1300,10 +1301,11 @@ background-color:transparent
 .main-header-menu>li .submenu .fishing__submenu {
     width: 1320px;
     background: url("../images/menu/fishing/fishing-submenu.jpg") 0 0 no-repeat;
-    background-size: 1320px 120px
+    background-size: 1320px 120px;
+    padding: 0 180px;
 }
 .main-header-menu>li .submenu .fishing__submenu li {
-    width: 165px
+    width: 240px
 }
 .main-header-menu>li .submenu .caipiao__submenu {
     width: 1000px;
